@@ -34,7 +34,3 @@ From pharmaceutical and health disinformation to online financial scams, there a
 
 Regulatory experiences have already shown that tools to monitor online advertising content can—and should—be substantially improved. Understanding the commercial operations that underpin the economics of large social media platforms is a matter of public interest which cannot remain obscured by transparency tools that fall short of their stated goals.
 
-## References {.unnumbered}
-
-::: {#refs}
-:::
