@@ -66,7 +66,3 @@ This regulatory deficit extends to online advertising. While all ads in the UK a
 
 Originally enacted in 1999, this framework is insufficient to address the challenges posed by the dynamics of information and disinformation on social media platforms [@Conway2025_ukadvertising]. Weak attempts to increase transparency around ad sources, such as the Elections Act 2022 [@UKParliament2022_elections], have failed to regulate content or enable meaningful public scrutiny. Without legislation requiring social media platforms to provide free and universal access to digital advertising data, the UK remains particularly vulnerable to political online manipulation and advertising fraud.
 
-## References {.unnumbered}
-
-::: {#refs}
-:::

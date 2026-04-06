@@ -196,7 +196,3 @@ All platforms are accessed through a graphical user interface (GUI): a visual an
 
 *Advertising Content.* In the context of advertising, ad repositories are primarily structured as web-based layers accessible through a GUI, and may be accompanied by an API. These GUIs allow users to browse ads served on a platform over a given period, providing access to their content as well as metadata such as delivery dates, reach, targeting criteria, and spending. In some cases, platforms also enable the extraction of this information in structured formats through simple interface-based actions, although comprehensive data coverage is often not guaranteed. Ad repository APIs, in turn, allow for the structured extraction of the data made available through these GUIs. However, they frequently impose additional limitations, including restrictions on the categories of ads whose data can be accessed, thereby constraining the scope and completeness of independent analysis.
 
-## References {.unnumbered}
-
-::: {#refs}
-:::

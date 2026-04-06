@@ -25,6 +25,7 @@ book:
     - chapters/results.qmd
     - chapters/recommendations.qmd
     - chapters/about.qmd
+    - chapters/references.qmd
     - part: "Platforms Evaluation"
       chapters:
         - chapters/appendices/bluesky.qmd

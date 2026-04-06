@@ -126,7 +126,3 @@ Bluesky is excluded from the Ads assessment as the platform does not have advert
 **The lack of standardised advertising data across platforms is a fundamental barrier to effective sector governance.** Variations in format, granularity, coverage, and definitions make consistent cross-platform comparison nearly impossible, limiting regulators’ ability to assess the ecosystem holistically and constraining the production of reliable comparative research. Without interoperable standards, platforms operate in isolation, under distinct disclosure practices, undermining efforts to ensure information integrity across the digital environment.
 
 **Advertising opacity also undermines both advertisers’ commercial interests and platform credibility.** Digital advertising is central to the business models of major social media companies and is projected to reach a global market value of USD 650 billion in 2025 [@PrecedenceResearch2025_digitalads]. Yet transparency and independent oversight remain limited. In the absence of independent verification of ad delivery and performance, investment decisions rely on unauditable, platform-generated metrics—“magical numbers” that are widely cited but fundamentally unverifiable. This erodes budget accountability, distorts competition, and weakens confidence in the online advertising marketplace. When performance claims cannot be independently verified, advertisers are more likely to direct budgets toward ineffective or inflated advertising products.
-## References {.unnumbered}
-
-::: {#refs}
-:::
