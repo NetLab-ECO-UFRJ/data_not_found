@@ -17,9 +17,7 @@ These repositories must meet robust quality standards, ensuring that data is com
 
 Critically, this means that access should not differentiate based on ad content or purpose. Our findings show that, even where ad repositories exist, they often impose significant constraints, such as artificial distinctions between political and non-political advertising. We argue that it is not possible to draw clear or widely accepted boundaries between these categories. Reliance on advertiser self-classification is also insufficient, as content may be mislabelled, whether intentionally or not.
 
-To fulfil their purpose, ad repositories should enable searches and data extraction across multiple parameters, including keywords, topics, targeting criteria, spending ranges, time periods, and geographic reach. Their design must support systematic, data-driven investigation rather than merely exploratory browsing.
-
-Tools that restrict searches to advertiser names function, in practice, as mechanisms of opacity, as identifying fraudulent, misleading, or harmful ads becomes nearly impossible without prior knowledge of the advertiser. This limitation is particularly acute in the context of influence operations, paid disinformation campaigns, and microtargeted political advertising, where risks stem from the granular dynamics of audience targeting and message delivery that aggregated data fail to capture.
+To fulfil their purpose, ad repositories should enable searches and data extraction across multiple parameters, including keywords, topics, targeting criteria, spending ranges, time periods, and geographic reach. Their design must support systematic, data-driven investigation rather than merely exploratory browsing. Tools that restrict searches to advertiser names function, in practice, as mechanisms of opacity, as identifying fraudulent, misleading, or harmful ads becomes nearly impossible without prior knowledge of the advertiser.
 
 **R2 — Ensure meaningful universal access to public user-generated content data for public-interest uses**
 
