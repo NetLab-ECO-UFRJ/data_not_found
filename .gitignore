@@ -45,3 +45,4 @@ Thumbs.db
 
 **/*.quarto_ipynb
 .worktrees/
+.env.dev

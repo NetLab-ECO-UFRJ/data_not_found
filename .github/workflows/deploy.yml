@@ -2,10 +2,11 @@ name: Deploy preview
 
 on:
   push:
-    branches: [main]
+    branches: [main, dev]
 
 jobs:
-  deploy:
+  deploy-main:
+    if: github.ref == 'refs/heads/main'
     runs-on: self-hosted
     steps:
       - name: Pull and rebuild
@@ -13,3 +14,13 @@ jobs:
           cd ~/data_not_found
           git pull origin main
           docker compose up --build -d
+
+  deploy-dev:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: self-hosted
+    steps:
+      - name: Pull and rebuild (dev)
+        run: |
+          cd ~/data_not_found
+          git pull origin dev
+          docker compose --env-file .env.dev -f docker-compose.dev.yaml up --build -d
