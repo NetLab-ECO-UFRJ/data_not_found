@@ -1,19 +1,17 @@
 project:
   type: book
-  output-dir: _output
+  post-render: scripts/copy-redirect.sh
+
+profile:
+  default: en
+  group:
+    - [en, pt]
 
 book:
   title: "Data Not Found"
   date: "April, 2026"
   sidebar:
     collapse-level: 1
-  other-links:
-    - text: "PDF"
-      href: "https://github.com/NetLab-ECO-UFRJ/transparency_index/raw/main/report.pdf"
-      icon: file-pdf
-    - text: "Code and Data"
-      href: "https://github.com/NetLab-ECO-UFRJ/transparency-index/"
-      icon: github
   chapters:
     - index.qmd
     - chapters/foreword.qmd
