@@ -12,6 +12,7 @@ _output/
 *_files/
 _freeze/
 /*.html
+!/redirect.html
 chapters/**/*.html
 
 # Python
