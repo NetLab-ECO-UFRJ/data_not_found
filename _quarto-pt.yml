@@ -15,7 +15,7 @@ book:
     - chapters/results.pt.qmd
     - chapters/recommendations.pt.qmd
     - chapters/about.pt.qmd
-    - chapters/references.qmd
+    - chapters/references.pt.qmd
     - part: "Avaliação das Plataformas"
       chapters:
         - chapters/appendices/bluesky.qmd
