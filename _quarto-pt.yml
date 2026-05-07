@@ -4,6 +4,35 @@ project:
 lang: pt-BR
 
 book:
+  chapters:
+    - index.pt.qmd
+    - chapters/foreword.pt.qmd
+    - chapters/executive-summary.pt.qmd
+    - chapters/introduction.pt.qmd
+    - chapters/information-integrity.pt.qmd
+    - chapters/regulation.pt.qmd
+    - chapters/methodology.pt.qmd
+    - chapters/results.pt.qmd
+    - chapters/recommendations.pt.qmd
+    - chapters/about.pt.qmd
+    - chapters/references.qmd
+    - part: "Avaliação das Plataformas"
+      chapters:
+        - chapters/appendices/bluesky.qmd
+        - chapters/appendices/discord.qmd
+        - chapters/appendices/facebook.qmd
+        - chapters/appendices/instagram.qmd
+        - chapters/appendices/kwai.qmd
+        - chapters/appendices/linkedin.qmd
+        - chapters/appendices/pinterest.qmd
+        - chapters/appendices/reddit.qmd
+        - chapters/appendices/snapchat.qmd
+        - chapters/appendices/telegram.qmd
+        - chapters/appendices/threads.qmd
+        - chapters/appendices/tiktok.qmd
+        - chapters/appendices/whatsapp.qmd
+        - chapters/appendices/x.qmd
+        - chapters/appendices/youtube.qmd
   other-links:
     - text: "PDF"
       href: "https://github.com/NetLab-ECO-UFRJ/data_not_found/raw/main/report.pdf"
@@ -17,7 +46,5 @@ format:
     code-links:
       - text: "English"
         href: /en/
-        icon: globe
       - text: "Português"
         href: /pt/
-        icon: globe

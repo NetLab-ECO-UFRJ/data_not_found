@@ -12,9 +12,20 @@ sources:
     UK: data/global/linkedin/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 LinkedIn’s UGC data transparency relies on a [Beta Researcher Access Program](https://www.linkedin.com/legal/l/research-api-terms) in the European Union under the DSA’s Article 40, with no equivalent resource available in Brazil or the UK. Advertising transparency is assessed through the [LinkedIn Ad Library](https://www.linkedin.com/ad-library) across all three regions, although data access regimes vary. During our assessment, a research access request was submitted but received no response, preventing empirical verification of the Researcher Access Program’s API. On the advertising side, the LinkedIn Ad Library API provides programmatic access to all ad types across the three regions, with data retained for up to one year after an ad’s last impression. However, key information—such as ad delivery periods and targeting criteria—is only verifiable in the EU. The tool’s graphical interface does not offer any data export functionality in any region, and persistent gaps include the absence of engagement metrics, advertiser verification status, AI-content labeling, and ad spending data. As a result, the advertising framework falls within the Deficient to Limited band globally, reflecting API availability offset by significant completeness gaps, while the UGC framework is Not Available outside the EU and remains unverifiable within it.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados de conteúdo gerado por usuários (UGC) do LinkedIn depende de um [Programa Beta de Acesso a Pesquisadores](https://www.linkedin.com/legal/l/research-api-terms) na União Europeia, sob o Artigo 40 da DSA, sem recurso equivalente disponível no Brasil ou no Reino Unido. A transparência publicitária é avaliada por meio da [Biblioteca de Anúncios do LinkedIn](https://www.linkedin.com/ad-library) nas três regiões, embora os regimes de acesso aos dados variem. Durante nossa avaliação, uma solicitação de acesso para pesquisa foi enviada, mas não recebeu resposta, impedindo a verificação empírica da API do Programa de Acesso a Pesquisadores. Do lado da publicidade, a API da Biblioteca de Anúncios do LinkedIn fornece acesso programático a todos os tipos de anúncios nas três regiões, com retenção de dados por até um ano após a última impressão de um anúncio. No entanto, informações fundamentais — como períodos de veiculação e critérios de segmentação — só são verificáveis na UE. A interface gráfica da ferramenta não oferece nenhuma funcionalidade de exportação de dados em qualquer região, e lacunas persistentes incluem a ausência de métricas de engajamento, status de verificação do anunciante, identificação de conteúdo gerado por IA e dados de gastos com anúncios. Como resultado, o quadro de publicidade situa-se na faixa entre Deficiente e Limitado em escala global, refletindo a disponibilidade da API contrabalançada por lacunas significativas de completude, enquanto o quadro de UGC é Indisponível fora da UE e permanece inverificável dentro dela.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("linkedin")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

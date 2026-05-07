@@ -12,9 +12,20 @@ sources:
     UK: data/global/telegram/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Telegram’s UGC data transparency is assessed through the [Telegram API](https://core.telegram.org/api) across Brazil, the EU, and the UK, while the platform provides no advertising transparency repository in any of the assessed regions. Under the UGC framework, the API enables free, structured extraction of public content data, supporting author-based search, keyword search, temporal filtering, historical data retrieval without time limits, and near-real-time access. Its most significant limitation is the absence of membership-free, platform-wide content discovery: access is restricted to channels and groups in which the requesting account or bot is already a member. No graphical interface for data extraction is available, and documentation quality is uneven, lacking deprecation policies, per-endpoint rate-limit specifications, and practical usage examples. As a result, Telegram is placed in the Limited band for UGC transparency, reflecting functional but structurally constrained API access. The absence of any advertising transparency infrastructure significantly limits the possibility of independent research into sponsored content on the platform.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados de conteúdo gerado por usuários (UGC) do Telegram é avaliada por meio da [API do Telegram](https://core.telegram.org/api) no Brasil, na UE e no Reino Unido, enquanto a plataforma não fornece nenhum repositório de transparência publicitária em qualquer das regiões avaliadas. Sob o quadro de UGC, a API permite a extração gratuita e estruturada de dados de conteúdo público, suportando busca por autor, busca por palavra-chave, filtragem temporal, recuperação de dados históricos sem limites de tempo e acesso em tempo quase real. Sua limitação mais significativa é a ausência de descoberta de conteúdo em escala plataforma sem necessidade de associação: o acesso é restrito a canais e grupos dos quais a conta ou o bot solicitante já seja membro. Não há interface gráfica disponível para extração de dados, e a qualidade da documentação é desigual, faltando políticas de descontinuação, especificações de limites de requisições por endpoint e exemplos práticos de uso. Como resultado, o Telegram é classificado na faixa Limitado para transparência de UGC, refletindo um acesso funcional, porém estruturalmente restrito, à API. A ausência de qualquer infraestrutura de transparência publicitária limita significativamente a possibilidade de pesquisa independente sobre conteúdo patrocinado na plataforma.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("telegram")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

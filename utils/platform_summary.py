@@ -14,7 +14,9 @@ from .summary_table import (
     get_platform_icon,
     normalize_platform_name,
     SCORE_BANDS,
+    score_band_label_pt,
 )
+from .i18n import t
 
 
 def _find_project_root() -> Path:
@@ -26,12 +28,12 @@ def _find_project_root() -> Path:
 
 def get_score_band_label(score: float) -> str:
     if score == 0:
-        return "Not Available"
+        return score_band_label_pt("Not Available")
     for lo, hi, _, label in SCORE_BANDS:
         if lo <= score < hi:
-            return label
+            return score_band_label_pt(label)
     if score >= 100:
-        return "Meaningful"
+        return score_band_label_pt("Meaningful")
     return "N/A"
 
 
@@ -78,7 +80,7 @@ def _generate_overall_scores_html(
 
     cards = []
 
-    for framework_label, scores in [("User-Generated Content", ugc_scores), ("Advertising", ads_scores)]:
+    for framework_label, scores in [(t("ugc_framework"), ugc_scores), (t("ads_framework"), ads_scores)]:
         if not scores:
             badge = _generate_score_badge_html(0, is_not_applicable=True)
             cards.append(
@@ -86,7 +88,7 @@ def _generate_overall_scores_html(
                 f'background: #f8f9fa; border: 1px solid #e0e0e0; opacity: 0.5;">'
                 f'<div style="margin: 0 0 12px 0; font-size: 1rem; color: #555; font-weight: 600;">{framework_label}</div>'
                 f'<div style="margin-bottom: 4px;">{badge}</div>'
-                f'<div style="font-size: 0.85rem; font-weight: 600; color: #999;">Not applicable</div>'
+                f'<div style="font-size: 0.85rem; font-weight: 600; color: #999;">{t("not_applicable")}</div>'
                 f'</div>'
             )
             continue
@@ -99,7 +101,7 @@ def _generate_overall_scores_html(
                 f'background: #f8f9fa; border: 1px solid #e0e0e0; opacity: 0.5;">'
                 f'<div style="margin: 0 0 12px 0; font-size: 1rem; color: #555; font-weight: 600;">{framework_label}</div>'
                 f'<div style="margin-bottom: 4px;">{badge}</div>'
-                f'<div style="font-size: 0.85rem; font-weight: 600; color: #999;">Not applicable</div>'
+                f'<div style="font-size: 0.85rem; font-weight: 600; color: #999;">{t("not_applicable")}</div>'
                 f'</div>'
             )
             continue

@@ -241,6 +241,39 @@ a:hover {
   display: none;
 }
 
+/* Rename "Code Links" -> "Language" and place it above Other Resources */
+#quarto-margin-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+#quarto-margin-sidebar > nav#TOC { order: 1; }
+#quarto-margin-sidebar > .quarto-other-links { order: 2; }
+#quarto-margin-sidebar > .quarto-code-links { order: 3; }
+
+.quarto-code-links h2 {
+  visibility: hidden;
+  position: relative;
+  height: 1.5em;
+}
+.quarto-code-links h2::before {
+  content: "Language";
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: var(--text-xs);
+  color: var(--brand-grafite-soft);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.quarto-code-links h2::after {
+  display: none;
+}
+.quarto-code-links ul li a i {
+  display: none;
+}
+
 /* Part labels */
 .sidebar-section > .sidebar-item > .sidebar-item-text {
   font-size: var(--text-xs);

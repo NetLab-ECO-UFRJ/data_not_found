@@ -1,0 +1,33 @@
+---
+title: "Resumo"
+subtitle: "Índice de Transparência de Redes Sociais"
+number-sections: false
+toc: false
+---
+
+As plataformas de redes sociais desempenham um papel central no debate público contemporâneo, mas permanecem em grande parte inacessíveis à análise independente. A transparência dos dados das redes sociais é essencial para garantir a integridade da informação. O acesso limitado a esses dados compromete a formulação de políticas públicas baseadas em evidências, dificulta a responsabilização das plataformas, enfraquece os esforços de mitigação de danos e riscos online e limita a aplicação efetiva das leis em diferentes jurisdições.
+
+Este relatório apresenta o ***Índice de Transparência de Redes Sociais***, uma avaliação sistemática e inédita das condições de acesso a dados de quinze das principais plataformas de redes sociais, considerando três diferentes contextos regulatórios: a União Europeia, o Reino Unido e o Brasil. Desenvolvido em colaboração pelo **NetLab** da Universidade Federal do Rio de Janeiro (Brasil) e pelo **Minderoo Centre for Technology & Democracy** da Universidade de Cambridge (Reino Unido), o Índice analisa a transparência das plataformas em função da possibilidade de acessar e examinar dados de conteúdos públicos gerados por usuários e de publicidade, com base em critérios orientados por princípios de qualidade de dados.
+
+Constatamos que, independentemente dos marcos regulatórios em vigor, a transparência ainda é a exceção, e não a regra. Muitas plataformas amplamente utilizadas oferecem pouco ou nenhum acesso a dados nas regiões avaliadas, enquanto outras impõem restrições que impedem a análise independente, incluindo pesquisas de interesse público, jornalismo e fiscalização por parte da sociedade civil e de órgãos reguladores governamentais. A falta de transparência de dados sobre conteúdos públicos gerados por usuários dificulta o rastreamento do fluxo de informações, prejudicando os esforços para monitorar a desinformação e salvaguardar a integridade da informação. Na publicidade, a opacidade dos dados das plataformas é especialmente prejudicial, expondo os usuários a riscos, minando a proteção do consumidor e limitando a capacidade dos agentes de mercado de tomar decisões informadas e auditáveis. Juntas, essas lacunas enfraquecem a capacidade de pesquisadores, reguladores e empresas de atuarem com eficácia, gerando riscos sociais e financeiros tangíveis.
+
+Os resultados indicam que os marcos regulatórios, em especial a Lei de Serviços Digitais (DSA) da União Europeia, podem melhorar as condições de acesso a dados, sobretudo no que se refere à publicidade. Ainda assim, não são suficientes para assegurar a implementação efetiva das medidas nem o pleno cumprimento das normas. No Brasil, a ausência de um marco regulatório específico para a transparência das plataformas se traduz, de forma consistente, nos níveis mais baixos de acesso a dados. Já o Reino Unido beneficia-se indiretamente da legislação europeia, refletindo o chamado "Efeito Bruxelas".
+
+O relatório apresenta recomendações para uma ação internacional coordenada entre empresas de redes sociais, órgãos de governança, formuladores de políticas regionais e pesquisadores, visando aprimorar a transparência de dados de conteúdos públicos gerados por usuários e de publicidade. Essas recomendações priorizam o apoio à pesquisa de interesse público e o enfrentamento das lacunas que produzem assimetrias regionais e entre plataformas. Com base nos resultados, defendemos o fortalecimento da aplicação dos padrões de transparência, o desenvolvimento de protocolos interoperáveis de acesso a dados e a adoção de medidas para reduzir disparidades que comprometem a integridade global da informação.
+
+### Como citar
+
+Santini, R. M., Leal, H., Salles, D., Belisário, A., Mattos, B., & Pinho, D. (2026). *Data not found: Transparência de redes sociais para a integridade da informação*. NetLab UFRJ e Minderoo Centre for Technology & Democracy. [https://doi.org/10.17863/CAM.128975](https://doi.org/10.17863/CAM.128975)
+
+```bibtex
+@techreport{santini2026datanotfound,
+  title       = {Data Not Found: Social Media Data Transparency
+                 for Information Integrity},
+  author      = {Santini, Rose Marie and Leal, Hugo and
+                 Salles, Debora and Belisario, Adriano and
+                 Mattos, Bruno and Pinho, Danielle},
+  year        = {2026},
+  institution = {NetLab UFRJ \& Minderoo Centre for Technology
+                 and Democracy},
+}
+```

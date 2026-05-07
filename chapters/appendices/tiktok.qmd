@@ -12,9 +12,20 @@ sources:
     UK: data/regional/UK/tiktok/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 TikTok’s data transparency is assessed through the platform’s [Research API](https://developers.tiktok.com/products/research-api/) for UGC and the [Commercial Content Library](https://library.tiktok.com/) for advertising, both restricted to the EU and the UK, as Brazil is excluded due to geographic eligibility constraints. In Brazil, both frameworks fall into the Not Available band: the Research API is limited to researchers affiliated with institutions in the United States, the European Economic Area, the United Kingdom, or Switzerland, and the Commercial Content Library only covers ads served in the EU and the UK. In the EU and the UK, the Research API enables programmatic extraction of public video data and includes well-documented compliance features such as a public changelog, rate-limit disclosures, and AI-generated content labels. However, it does not offer a graphical interface for UGC data access, retrieval by individual author is unreliable, content language filtering is unavailable, and new videos may take up to 48 hours to be indexed. For advertising in the EU and the UK, the Commercial Content Library API provides programmatic access to both active and inactive ads for up to one year after their last delivery. Structured data extraction via the graphical interface is not supported. The library discloses advertiser and funder identities and delivery dates, but it does not include engagement metrics, advertiser verification status, AI disclosure data, audience demographics, or spending information. This model of selective transparency, in which access is conditioned on regulatory jurisdiction, is the defining limitation across both frameworks and substantially restricts access for the global majority.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados do TikTok é avaliada por meio da [Research API](https://developers.tiktok.com/products/research-api/) da plataforma, para conteúdo gerado por usuários (UGC), e da [Commercial Content Library](https://library.tiktok.com/), para publicidade, ambas restritas à União Europeia e ao Reino Unido, já que o Brasil é excluído por restrições geográficas de elegibilidade. No Brasil, os dois mecanismos de transparência se enquadram na faixa Não Disponível: a Research API limita-se a pesquisadores vinculados a instituições nos Estados Unidos, no Espaço Econômico Europeu, no Reino Unido ou na Suíça, e a Commercial Content Library cobre apenas anúncios veiculados na União Europeia e no Reino Unido. Na União Europeia e no Reino Unido, a Research API permite a extração programática de dados públicos de vídeos e conta com recursos de conformidade bem documentados, como changelog público, divulgação de limites de requisição e rotulagem de conteúdo gerado por IA. Entretanto, não oferece interface gráfica para acesso a dados de UGC, a recuperação por autor individual é pouco confiável, a filtragem por idioma do conteúdo não está disponível e novos vídeos podem levar até 48 horas para serem indexados. Para publicidade na União Europeia e no Reino Unido, a API da Commercial Content Library oferece acesso programático tanto a anúncios ativos quanto inativos por até um ano após sua última veiculação. A extração estruturada de dados pela interface gráfica não é suportada. A biblioteca divulga identidades de anunciantes e financiadores e datas de veiculação, mas não inclui métricas de engajamento, status de verificação do anunciante, dados sobre divulgação de IA, dados demográficos de audiência ou informações de gastos. Esse modelo de transparência seletiva, no qual o acesso é condicionado à jurisdição regulatória, é a limitação central de ambos os mecanismos e restringe substancialmente o acesso para a maioria global.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 ```{python}
 #| label: setup
@@ -40,7 +51,12 @@ generate_platform_summary("tiktok")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -54,7 +70,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions
@@ -67,4 +88,3 @@ generate_platform_question_sections(
     heading_level=3,
 )
 ```
-

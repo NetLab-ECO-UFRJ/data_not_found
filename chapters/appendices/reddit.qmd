@@ -12,9 +12,20 @@ sources:
     UK: data/global/reddit/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Reddit’s UGC data transparency is assessed through the [Reddit Data API](https://support.reddithelp.com/hc/en-us/articles/16160319875092-Reddit-Data-API-Wiki) as a single global resource. The platform does not provide any advertising transparency repository in any of the assessed regions. The Data API offers free access for non-commercial and research purposes, supports content search and user submission retrieval, and returns structured JSON responses with stable OAuth authentication. Reddit is therefore placed in the Negligible band for UGC, primarily because the API does not enable extraction of the full scope of public content. In our testing, the total number of retrievable posts for a given search term varied depending on sort parameters, even when identical queries were used. The API also lacks custom date-range filters, location- or language-based filtering, AI-generated content flags, and any graphical interface for data extraction. As the platform provides no ad repository or mechanism to retrieve data on ads served to other users, it receives a Not Available score for advertising transparency.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados de conteúdo gerado por usuários (UGC) do Reddit é avaliada por meio da [Reddit Data API](https://support.reddithelp.com/hc/en-us/articles/16160319875092-Reddit-Data-API-Wiki) como um recurso global único. A plataforma não disponibiliza nenhum repositório de transparência publicitária em qualquer das regiões avaliadas. A Data API oferece acesso gratuito para fins não comerciais e de pesquisa, suporta busca de conteúdo e recuperação de submissões de usuários, e retorna respostas estruturadas em JSON com autenticação OAuth estável. O Reddit é, portanto, classificado na faixa Negligenciável para UGC, principalmente porque a API não permite a extração da totalidade do conteúdo público. Em nossos testes, o número total de postagens recuperáveis para um determinado termo de busca variou conforme os parâmetros de ordenação, mesmo quando consultas idênticas foram utilizadas. A API também carece de filtros personalizados por intervalo de datas, filtragem por localização ou idioma, identificação de conteúdo gerado por IA e qualquer interface gráfica para extração de dados. Como a plataforma não fornece repositório de anúncios nem mecanismo para recuperar dados sobre anúncios veiculados a outros usuários, recebe a classificação Indisponível para transparência publicitária.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("reddit")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

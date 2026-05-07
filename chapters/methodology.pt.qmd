@@ -1,0 +1,198 @@
+---
+title: "Materiais e Métodos"
+---
+
+Este estudo adota um quadro analítico abrangente, fundamentado em princípios de qualidade de dados [@Batini2016_dataquality], para avaliar o acesso de pesquisadores a dados de interesse público e gerar evidências empíricas sobre se, e em quais condições, as plataformas disponibilizam esses dados. O quadro foi concebido para ser replicável, comparável e aplicável em diferentes plataformas e contextos regulatórios. Parte-se da premissa de que a transparência vai além da mera existência de dados públicos, abrangendo as condições sob as quais tais dados podem ser acessados, compreendidos, utilizados e verificados, respeitando os marcos aplicáveis de privacidade e proteção de dados.
+
+A análise se concentra em conteúdos gerados por usuários (UGC) publicamente acessíveis e em dados de publicidade em redes sociais para fins de pesquisa de interesse público sem fins lucrativos, auditoria e responsabilização. Dados publicamente acessíveis são definidos como conteúdos com visibilidade pública — tais como publicações, comentários, canais, perfis públicos, metadados e indicadores de engajamento — que podem ser acessados por qualquer usuário. Assim, comunicações privadas, conteúdos criptografados e quaisquer dados que exijam consentimento individual são explicitamente excluídos. A publicidade em redes sociais é tratada como inerentemente pública, uma vez que é concebida para ampla disseminação por meio de promoção paga. Já os conteúdos públicos gerados por usuários, embora também publicamente acessíveis, são abordados com maior sensibilidade ética devido ao seu caráter contextual e potencialmente pessoal. Dessa forma, todos os dados foram tratados em conformidade com diretrizes éticas estabelecidas, incluindo considerações sobre privacidade, integridade contextual e minimização de possíveis danos [@AOIR2019_ethics; @Gliniecka2023_reddit; @Lauterwasser2023_privacy]. Mais esclarecimentos sobre a terminologia utilizada ao longo deste relatório são fornecidos na seção [Terminologia](#terminology).
+
+A análise examina os mecanismos oficiais de transparência de UGC público e de publicidade em 15 plataformas de redes sociais, listadas na Tabela 1, por meio dos quais as plataformas fornecem acesso sistemático a dados granulares em nível de publicação, em vez de resultados agregados ou resumidos. Esses mecanismos incluem, principalmente, APIs oficiais, bem como interfaces gráficas com funcionalidades de extração e análise de dados.
+
+Em contraste, intermediários terceirizados de dados, métodos alternativos de coleta como raspagem (web scraping) e conjuntos de dados curados pelas plataformas e fornecidos mediante solicitação são excluídos. A raspagem ocorre, em geral, sob condições subótimas, expondo tanto pesquisadores quanto usuários a riscos legais e a possíveis ações por parte das plataformas, ao mesmo tempo em que introduz desafios adicionais para a qualidade dos dados — particularmente em termos de completude e confiabilidade — uma vez que os dados coletados dependem do que é exibido para a pessoa que realiza a raspagem em determinado momento [@Bruns2019_apicalypse; @Freelon2018_postapi]. Embora recomendemos a regulação de práticas lícitas e éticas de raspagem, defendemos que tais abordagens permanecem insuficientes para apoiar plenamente as formas de auditoria pública, escrutínio e pesquisa promovidas neste trabalho.
+
+Intermediários terceirizados de dados, embora frequentemente utilizados no mercado de social listening, costumam fornecer resultados não auditáveis e com customização limitada. Operam, em larga medida, como sistemas de caixa-preta, oferecendo pouca transparência ou auditabilidade, e frequentemente envolvem custos que podem ser proibitivos para a pesquisa independente [@Yadav2022_social]. De forma análoga, solicitações de acesso a dados às plataformas oferecem formas altamente restritas e mediadas de acesso, já que as plataformas determinam o escopo e a composição dos conjuntos de dados que disponibilizam, oferecendo aos pesquisadores controle limitado sobre como os dados são compilados, filtrados ou curados, o que pode comprometer a transparência e a reprodutibilidade [@Morten2024_researcher; @Windwehr2024_fix]. Outras formas de transparência promovidas pelas plataformas, como relatórios de transparência de moderação de conteúdo, também não são consideradas [@AccessNow2024_transparency; @Urman2023_transparent].
+
+***Tabela 1: Plataformas analisadas e mecanismos de acesso a dados considerados para conteúdos gerados por usuários e conteúdo publicitário***
+
+| Plataforma | Empresa proprietária | Acesso a dados de UGC | Acesso a dados de publicidade | [Status de VLOP no DSA](https://digital-strategy.ec.europa.eu/en/policies/list-designated-vlops-and-vloses) |
+| :---- | :---- | :---- | :---- | :---- |
+| **Bluesky** | Bluesky PBLLC | [APIs para Desenvolvedores do Bluesky](https://docs.bsky.app/) | N/A | Não |
+| **Discord** | Discord Inc. | N/A | N/A | Não |
+| **Facebook** | Meta Platforms Inc. | [Biblioteca de Conteúdos da Meta](https://transparency.meta.com/researchtools/meta-content-library/) | [Biblioteca de Anúncios da Meta](https://www.facebook.com/ads/library/) | Sim |
+| **Instagram** | Meta Platforms Inc. | [Biblioteca de Conteúdos da Meta](https://transparency.meta.com/researchtools/meta-content-library/) | [Biblioteca de Anúncios da Meta](https://www.facebook.com/ads/library/) | Sim |
+| **Kwai (Kuaishou/Snack Video)** | Kuaishou Technology | N/A | N/A | Não |
+| **LinkedIn** | Microsoft Corporation | [Programa de Acesso a Dados para Pesquisadores (Beta)](https://www.linkedin.com/help/linkedin/answer/a1645616) | [Biblioteca de Anúncios do LinkedIn](https://www.linkedin.com/ad-library/) | Sim |
+| **Pinterest** | Pinterest Inc. | N/A | [Repositório de Anúncios do Pinterest](https://ads.pinterest.com/ads-repository/) | Sim |
+| **Reddit** | Reddit Inc. | [API de Pesquisa do Reddit](https://www.reddit.com/r/reddit4researchers/) | N/A | Não |
+| **Snapchat** | Snap Inc. | N/A | [Galeria de Anúncios do Snapchat](https://adsgallery.snap.com/) | Sim |
+| **Telegram** | Telegram Messenger Inc. | [APIs do Telegram](https://core.telegram.org/) | N/A | Não |
+| **Threads** | Meta Platforms Inc. | [Biblioteca de Conteúdos da Meta](https://transparency.meta.com/researchtools/meta-content-library/) | [Biblioteca de Anúncios da Meta](https://www.facebook.com/ads/library/) | Não |
+| **TikTok** | ByteDance Ltd. | [API de Pesquisa do TikTok](https://developers.tiktok.com/doc/research-api-get-started) | [Biblioteca de Conteúdos Comerciais do TikTok](https://library.tiktok.com/) | Sim |
+| **X (Twitter)** | X Corp. | [API do X](https://docs.x.com/x-api/introduction) | [Repositório de Anúncios do X](https://ads.twitter.com/ads-repository) | Sim |
+| **WhatsApp** | Meta Platforms Inc. | N/A | [Biblioteca de Anúncios da Meta](https://www.facebook.com/ads/library/) | Sim |
+| **YouTube** | Alphabet Inc. (Google) | [API de Dados do YouTube](https://developers.google.com/youtube/v3) | [Central de Transparência de Anúncios do Google](https://adstransparency.google.com/) | Sim |
+
+Esses recursos de transparência são examinados em três contextos regulatórios distintos: a União Europeia — onde o acesso a dados de interesse público para pesquisa é regido pelo DSA — além de Brasil e Reino Unido, que servem como casos comparativos analiticamente relevantes. Nos casos em que não foram identificadas diferenças regionais nos mecanismos de acesso a dados, foi realizada uma única avaliação, aplicada a todas as jurisdições pertinentes.
+
+*Critérios de avaliação e pontuações de transparência*
+
+Os recursos de transparência listados na Tabela 1 foram avaliados por meio de dois subconjuntos de critérios originais, que avaliam separadamente a transparência de dados de UGC e de publicidade em termos de ferramentas de acesso e qualidade dos dados. Esses critérios estão estruturados em categorias especiais e adicionais, fundamentadas em sete dimensões de qualidade de dados, permitindo avaliar não apenas se os dados são disponibilizados, mas também como e sob quais condições. O desempenho em cada critério é então utilizado para gerar uma pontuação final, que varia de 0 a 100, para cada recurso avaliado.
+
+Representando 75% de cada pontuação final, os critérios especiais, com maior peso, listados na Tabela 2, avaliam aspectos centrais como disponibilidade de API, escopo, custo e a presença de interfaces gráficas para acesso a dados. Quatro critérios especiais são aplicados à transparência de dados de UGC, enquanto três são utilizados para a transparência de dados de publicidade.
+
+As APIs se destacam como um mecanismo central de transparência, pois possibilitam a automação e a escalabilidade da coleta de dados, bem como facilitam testes independentes para verificar se os dados extraídos correspondem ao que se pretendia obter. De forma crucial, as APIs devem viabilizar a extração independente de dados estruturados para a infraestrutura dos próprios usuários, fora de ambientes supostamente controlados e seguros, sustentando assim princípios centrais da ciência aberta e permitindo a verificação e a colaboração entre instituições [@bekavac2026auditingmetatiktokresearch; @Davidson2023_platformapis; @Wilkinson2016_fair]. As interfaces gráficas também desempenham um papel relevante na democratização do acesso para pesquisadores e cidadãos com recursos técnicos ou conhecimentos especializados mais limitados [@Giglietto2025_stateapis].
+
+***Tabela 2: Critérios especiais de avaliação de mecanismos de transparência de dados de conteúdos gerados por usuários e de publicidade***
+
+| Transparência de dados de conteúdos gerados por usuários | Transparência de dados de conteúdo publicitário |
+| :---- | :---- |
+| **SC1:** A plataforma disponibiliza uma API que permite a extração estruturada de dados de conteúdos públicos gerados por usuários para análise independente? | **SC1:** A plataforma fornece uma API para acesso ao seu repositório de anúncios e extração de dados de conteúdo publicitário para análise independente? |
+| **SC2:** É possível extrair, por meio da API da plataforma, todo o escopo dos dados de conteúdo público? | **SC2:** A plataforma oferece uma interface gráfica de usuário para o seu repositório de anúncios que permita a extração de dados de conteúdo publicitário? |
+| **SC3:** O acesso à API da plataforma é gratuito? | **SC3:** É possível extrair dados de anúncios ativos e inativos? |
+| **SC4:** A plataforma oferece uma interface gráfica para extração de dados? |  |
+
+Os demais critérios têm peso equivalente entre si e, em conjunto, representam os 25% restantes de cada pontuação final. Ao todo, o quadro analítico inclui outros 25 critérios para a transparência de dados de UGC, apresentados na Tabela 3, e 33 para a transparência de dados de publicidade, apresentados na Tabela 4, todos organizados sob sete dimensões de qualidade de dados:
+
+* ***Acessibilidade*** garante que os dados pretendidos possam ser facilmente encontrados e recuperados pelos usuários;
+
+* ***Conformidade*** refere-se à observância de padrões amplamente adotados, de marcos regulatórios aplicáveis e da documentação da própria plataforma;
+
+* ***Completude*** garante que os dados incluam todas as informações necessárias para a realização das análises pretendidas;
+
+* ***Consistência*** refere-se à uniformidade dos dados em todas as suas instâncias;
+
+* ***Relevância*** garante que os dados sejam significativos e adequadamente delimitados para os usos pretendidos;
+
+* ***Atualidade*** indica que os dados estão atualizados e disponíveis no momento em que são necessários;
+
+* e ***Acurácia*** refere-se ao grau em que os dados representam de forma fiel a entidade ou o evento do mundo real ao qual dizem respeito.
+
+A pontuação de transparência de UGC é a soma de dois componentes. A pontuação dos critérios especiais ($S_{SC}$) representa 75% do total: quatro critérios são ponderados com $w_1 = w_2 = w_3 = 0,30$ e $w_4 = 0,10$, com pesos de resposta ($SC_i$) de 1 para acesso completo, 0,5 para acesso restrito a pesquisadores e 0 para indisponível. A pontuação dos demais critérios ($S_{OC}$) corresponde aos 25% restantes e equivale à média dos pesos de resposta entre todos os critérios aplicáveis, sendo as respostas não aplicáveis excluídas do denominador.
+
+A pontuação de transparência de publicidade segue a mesma estrutura de dois componentes. A pontuação dos critérios especiais ($S_{SC}$) representa 75% do total: três critérios são ponderados com $w_1 = 0,50$, $w_2 = 0,30$ e $w_3 = 0,20$, com pesos de resposta ($SC_i$) de 1 para acesso completo, 0,5 quando o acesso se restringe a categorias específicas (por exemplo, publicidade política) e 0 para indisponível. A pontuação dos demais critérios ($S_{OC}$) é calculada de forma idêntica à de UGC. As fórmulas completas de pontuação são apresentadas na seção Metodologia de Pontuação.
+
+Todas as plataformas foram inicialmente avaliadas entre outubro e dezembro de 2025 por duplas de pesquisadores com expertise complementar em infraestrutura de coleta de dados e em análise de dados. A avaliação priorizou, em ordem decrescente, o teste empírico dos mecanismos de acesso, a revisão da documentação oficial e as evidências de estudos comparáveis, evitando explicitamente a dependência exclusiva de declarações autorreferenciadas das plataformas, sempre que possível. Todas as avaliações passaram, posteriormente, por um processo interno de validação por pares conduzido entre janeiro e março de 2026. Todos os dados estruturados e o código utilizados na avaliação estão publicamente disponíveis no repositório do projeto.
+
+As pontuações finais refletem a medida em que cada plataforma permite o acesso independente, sistemático e de alta qualidade a dados de UGC e de publicidade para fins de pesquisa. Cada avaliação de plataforma por região é, então, classificada em um dos seguintes níveis de transparência:
+
+* **Significativa (81–100):** A plataforma oferece uma infraestrutura de dados consolidada e de acesso aberto — incluindo APIs gratuitas, documentação completa e ampla cobertura de dados — permitindo a coleta e o monitoramento sistemáticos de conteúdo com barreiras mínimas.
+
+* **Limitada (61–80):** A plataforma oferece ferramentas funcionais de acesso a dados, mas apresenta restrições relevantes — como barreiras de pagamento, escopo limitado da API, documentação incompleta ou acesso condicionado à aprovação de pesquisadores — que exigem soluções alternativas para um monitoramento abrangente.
+
+* **Insuficiente (41–60):** A plataforma oferece mecanismos parciais de transparência, mas lacunas significativas na cobertura de dados, nas possibilidades de filtragem e na documentação comprometem a realização de pesquisas confiáveis em larga escala.
+
+* **Precária (21–40):** A plataforma oferece apenas acesso muito restrito aos dados, com a maioria dos recursos de transparência ausentes ou fortemente limitados, dificultando o monitoramento sistemático.
+
+* **Insignificante (1–20):** A plataforma apresenta uma infraestrutura de transparência praticamente inexistente, com quase todos os critérios não atendidos e quaisquer ferramentas existentes demasiado limitadas para apoiar pesquisas significativas.
+
+* **Indisponível (0):** A plataforma não disponibiliza mecanismos de acesso a dados, embora o quadro analítico seja aplicável.
+
+## Metodologia de Pontuação
+
+### Transparência de UGC
+
+**Pontuação dos Critérios Especiais (peso de 75%):**
+
+$$
+S_{SC} = 75 \sum_{i=1}^{4} w_i \cdot SC_i
+$$
+
+onde $w_1 = w_2 = w_3 = 0.30$ e $w_4 = 0.10$ são pesos fixos das questões, e $SC_i \in \{0, 0.5, 1\}$ é o peso da resposta (1 para acesso completo, 0,5 para acesso restrito a pesquisadores, 0 para indisponível).
+
+### Transparência de Publicidade
+
+**Pontuação dos Critérios Especiais (peso de 75%):**
+
+$$
+S_{SC} = 75 \sum_{i=1}^{3} w_i \cdot SC_i
+$$
+
+onde $w_1 = 0.50$, $w_2 = 0.30$ e $w_3 = 0.20$, e $SC_i \in \{0, 0.5, 1\}$ (0,5 para acesso restrito a categorias específicas, como publicidade política).
+
+### Ambos os Quadros
+
+**Pontuação dos Demais Critérios (peso de 25%):**
+
+$$
+S_{OC} = 25 \cdot \frac{\sum_{j=1}^{n} OC_j}{N_{app}}
+$$
+
+onde $OC_j \in \{0, 0.5, 1\}$ é o peso da resposta para cada critério e $N_{app}$ é o número de critérios aplicáveis (respostas não aplicáveis são excluídas tanto do numerador quanto do denominador). Para os critérios de publicidade, $OC_j = 0.5$ quando uma funcionalidade está disponível apenas via API ou via GUI, e $OC_j = 1$ quando disponível por ambas.
+
+**Pontuação Total:**
+
+$$
+\text{Total Score} = S_{SC} + S_{OC}
+$$
+
+## Questionários
+
+```{python}
+#| echo: false
+#| output: asis
+
+import yaml
+from pathlib import Path
+
+def format_category_title(category):
+    return category.replace('_', ' ').title()
+
+def display_questions(yaml_file, title):
+    print(f"\n### {title}\n")
+
+    with open(yaml_file, 'r') as f:
+        data = yaml.safe_load(f)
+
+    for category, questions in data.items():
+        print(f"\n#### {format_category_title(category)}\n")
+
+        for q in questions:
+            print(f"**{q['code']}**: {q['title']}\n")
+            print(f"*Description*: {q['description']}\n")
+            print(f"*Available answers*:\n")
+            for answer in q['answers']:
+                print(f"- {answer['label']} (weight: {answer['weight']})")
+            print("\n")
+
+display_questions('../data/questions_ugc_2025.yml', 'User-Generated Content (UGC) Questions')
+display_questions('../data/questions_ads_2025.yml', 'Advertising (Ads) Questions')
+```
+
+## Terminologia {#terminology}
+
+**Plataformas online**
+
+Plataformas online são infraestruturas tecnológicas que conectam indivíduos e organizações, facilitando a troca de bens, serviços ou informações ao mediarem relações entre duas ou mais partes. Frequentemente incluem recursos técnicos que permitem que terceiros interajam com a plataforma ou desenvolvam funcionalidades adicionais. Tais plataformas são inerentemente não neutras e operam sob incentivos orientados ao lucro. Embora as plataformas online assumam diversas formas (por exemplo, lojas de aplicativos, serviços de streaming, mercados online), este trabalho se concentra especificamente em um tipo: as *redes sociais*.
+
+*Plataformas de redes sociais.* As plataformas de redes sociais são um subconjunto das plataformas online que hospedam e fazem circular conteúdos e interações gerados por usuários, em vez de produzirem a maior parte do conteúdo por si mesmas. Além do conteúdo gerado por usuários, essas plataformas veiculam publicidade e material comercial, que constituem a base de seus modelos de negócio. Esses modelos dependem de infraestruturas computacionais projetadas para a coleta, o processamento e a análise em larga escala de dados de usuários. Embora o conteúdo seja em grande parte criado pelos usuários, as plataformas tomam decisões cruciais sobre sua distribuição — determinando o que é exibido, para quem, como as conexões e interações entre usuários são estruturadas e o que é permitido.
+
+*Plataformas de mensagens.* Embora utilizadas principalmente para comunicação em tempo real, pessoal e criptografada, as plataformas de mensagens (por exemplo, Discord, WhatsApp, Telegram) borram cada vez mais as fronteiras entre interações privadas e públicas. Elas vêm incorporando progressivamente componentes sociais a seus recursos centrais, como grandes grupos, canais públicos, atualizações de status e outras funcionalidades voltadas à transmissão ou à formação de comunidades, que facilitam a circulação ampla de conteúdo e a formação de públicos em rede. Por isso, defendemos que as plataformas de mensagens devem ser consideradas parte integrante do ecossistema das redes sociais.
+
+**Conteúdo gerado por usuários**
+
+As plataformas de redes sociais são predominantemente populadas por dois tipos distintos de conteúdo: conteúdo gerado por usuários e conteúdo publicitário. O conteúdo gerado por usuários (UGC) refere-se a qualquer material criado e compartilhado por usuários em uma plataforma — como publicações, comentários, imagens ou vídeos — em vez de pela própria plataforma, distribuído de forma orgânica e sem promoção paga. Para a maioria das plataformas, o UGC não é apenas um meio de permitir que usuários se comuniquem e se conectem, mas também um mecanismo central pelo qual o engajamento dos usuários é convertido em dados comportamentais e, em última instância, em valor econômico.
+
+**Conteúdo publicitário**
+
+Por outro lado, o conteúdo publicitário pode ser entendido como qualquer forma de comunicação comercial cuja visibilidade é amplificada por meio de pagamentos efetuados à plataforma. Esse tipo de conteúdo é tipicamente distribuído de forma microdirecionada: a partir do acúmulo de dados comportamentais, demográficos e geográficos dos usuários — derivados tanto de suas interações quanto das informações que fornecem voluntariamente — as plataformas constroem perfis detalhados dos usuários. Esses perfis são então disponibilizados aos anunciantes, que os utilizam para direcionar audiências consideradas mais propensas a receber, engajar-se com e responder ao conteúdo promovido.
+
+**Interface de Programação de Aplicações**
+
+As Interfaces de Programação de Aplicações (APIs) estão entre os métodos mais amplamente utilizados para a coleta de dados estruturados em plataformas de redes sociais. Elas viabilizam a comunicação entre componentes de software — tipicamente um servidor (como um banco de dados de uma plataforma) e um cliente (por exemplo, o dispositivo de um pesquisador) — por meio de requisições padronizadas de dados regidas por protocolos específicos. Ao permitir que usuários acessem e recuperem dados de forma segura, estruturada e automatizada, as APIs sustentam processos escaláveis de coleta de dados e oferecem alto grau de customização, já que pesquisadores podem ajustar consultas a parâmetros específicos e às necessidades de pesquisa. O acesso geralmente requer tokens de autenticação para validar as requisições do cliente, enquanto a recuperação de dados ocorre por meio de chamadas a endpoints predefinidos, seguindo parâmetros especificados na documentação da API e executados por meio de código.
+
+Ao facilitar a troca de dados, as APIs promovem a interoperabilidade entre sistemas que, de outro modo, seriam heterogêneos. No entanto, algumas APIs adotam um desenho mais restritivo, exigindo aprovação prévia e limitando o acesso a ambientes seguros e controlados. Defendemos que esse modelo não é ideal para pesquisas e investigações baseadas em plataformas online, pois compromete princípios centrais da ciência aberta ao impedir a verificação independente de resultados, restringir a validação cruzada com outras fontes de dados e limitar a colaboração e o compartilhamento de dados entre comunidades de pesquisa.
+
+**Raspagem de dados (web scraping)**
+
+A raspagem de dados (web scraping) é um método de extração e agregação de conteúdo online, frequentemente utilizado por pesquisadores quando os mecanismos oficiais de acesso a dados — como APIs — são limitados ou insuficientes. Na prática, contudo, a raspagem é tipicamente restringida pelos termos de serviço das plataformas e ativamente desencorajada por barreiras técnicas, exigindo esforço contínuo para manter os fluxos de coleta e processamento de dados. Essa dinâmica não apenas amplia a sobrecarga técnica sobre os pesquisadores, mas também introduz incerteza jurídica, já que as plataformas, em alguns casos, têm tomado medidas contra indivíduos envolvidos em raspagem.
+
+Embora as plataformas justifiquem essas restrições como necessárias para proteger dados de usuários, garantir autenticidade, prevenir abusos automatizados e salvaguardar seus ecossistemas, a raspagem permanece uma abordagem longe de ideal para a pesquisa em redes sociais. Ela apresenta desafios significativos relacionados à qualidade, confiabilidade e completude dos dados, bem como à manutenção e estabilidade de longo prazo das infraestruturas necessárias para sustentar a coleta de dados em larga escala.
+
+**Interface Gráfica de Usuário**
+
+Todas as plataformas são acessadas por meio de uma interface gráfica de usuário (GUI): um ambiente visual e interativo que permite aos usuários executar ações e inserir comandos de maneira intuitiva e não programática. Além de suas interfaces principais, algumas plataformas também disponibilizam interfaces dedicadas ao acesso e à exploração de dados, possibilitando a coleta e a navegação tanto de UGC quanto de conteúdo publicitário.
+
+*Conteúdo gerado por usuários.* No caso do UGC, um exemplo notável é o CrowdTangle, ferramenta desenvolvida pela Meta que permitia a pesquisadores e jornalistas aprovados navegar e extrair dados públicos estruturados de plataformas dentro de seu ecossistema. O acesso aos dados podia ser realizado de forma programática, via API, ou diretamente por meio da interface gráfica, frequentemente com esforço técnico mínimo. A ferramenta também oferecia recursos acessíveis e interativos para visualização e análise de dados. O CrowdTangle foi posteriormente substituído pela Meta Content Library (MCL), introduzida em 2023 como um arquivo privado de UGC público do Facebook, Instagram e Threads, com acesso e funcionalidades mais restritos. O acesso à MCL é limitado a pesquisadores previamente aprovados pela Meta, incluindo aqueles vinculados a instituições acadêmicas, institutos de pesquisa, organizações sem fins lucrativos e outras entidades engajadas em pesquisa científica ou de interesse público. Os dados podem ser acessados tanto por meio de uma GUI com funcionalidades semelhantes às anteriormente oferecidas pelo CrowdTangle quanto por meio de uma API. No entanto, o acesso via API só é concedido em um ambiente rigidamente controlado, geralmente por meio de um sistema fechado de máquina virtual que impede a exportação de dados e restringe a integração com a infraestrutura dos próprios pesquisadores, limitando, assim, o compartilhamento de dados e a análise independente.
+
+*Conteúdo publicitário.* No contexto da publicidade, os repositórios de anúncios são estruturados primordialmente como camadas web acessíveis por meio de uma GUI e podem ser acompanhados por uma API. Essas GUIs permitem aos usuários navegar pelos anúncios veiculados em uma plataforma ao longo de determinado período, oferecendo acesso ao seu conteúdo, bem como a metadados como datas de veiculação, alcance, critérios de segmentação e gastos. Em alguns casos, as plataformas também permitem a extração dessas informações em formatos estruturados por meio de ações simples na interface, embora a cobertura abrangente dos dados nem sempre seja garantida. As APIs de repositórios de anúncios, por sua vez, possibilitam a extração estruturada dos dados disponibilizados por meio dessas GUIs. No entanto, frequentemente impõem limitações adicionais, incluindo restrições às categorias de anúncios cujos dados podem ser acessados, restringindo, assim, o escopo e a completude da análise independente.
+

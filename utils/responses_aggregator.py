@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 from collections import OrderedDict
 from .quarto_helpers import get_answer_icon, get_platform_sources
+from .i18n import t, get_localized_field
 
 PROJECT_ROOT = Path(__file__).parent.parent
 
@@ -123,7 +124,7 @@ def load_platform_answers(platform_path: Path, question_type: str) -> Dict[str, 
                 if code:
                     answers_by_code[code] = {
                         "selected_answer": answer.get("selected_answer", ""),
-                        "notes": answer.get("notes") or ""
+                        "notes": get_localized_field(answer, "notes") or ""
                     }
 
     return answers_by_code
@@ -143,7 +144,7 @@ def load_platform_answers_from_file(filepath: Path) -> Dict[str, Any]:
                 if code:
                     answers_by_code[code] = {
                         "selected_answer": answer.get("selected_answer", ""),
-                        "notes": answer.get("notes") or ""
+                        "notes": get_localized_field(answer, "notes") or ""
                     }
     return answers_by_code
 
@@ -278,7 +279,7 @@ def generate_platform_question_sections(
 
     sources = get_platform_sources(platform, question_type, PROJECT_ROOT)
     if not sources:
-        print("\n**Coverage:** Not assessed\n")
+        print(f"\n**{t('coverage')}:** {t('not_assessed')}\n")
         return
 
     answers_by_region: Dict[str, Dict[str, Any]] = {}
@@ -287,7 +288,7 @@ def generate_platform_question_sections(
 
     display_regions = list(sources.keys())
     coverage_label = ", ".join(display_regions)
-    print(f"\n**Coverage:** {coverage_label}\n")
+    print(f"\n**{t('coverage')}:** {coverage_label}\n")
 
     cat_h = "#" * heading_level
     q_h = "#" * (heading_level + 1)
@@ -305,9 +306,9 @@ def generate_platform_question_sections(
             print('</colgroup>')
             print('<thead>')
             print('<tr style="border-bottom:2px solid #ddd;">')
-            print('<th style="text-align:left; padding:8px; width:120px;">Region</th>')
-            print('<th style="text-align:left; padding:8px; width:160px;">Answer</th>')
-            print('<th style="text-align:left; padding:8px;">Note</th>')
+            print(f'<th style="text-align:left; padding:8px; width:120px;">{t("region")}</th>')
+            print(f'<th style="text-align:left; padding:8px; width:160px;">{t("answer")}</th>')
+            print(f'<th style="text-align:left; padding:8px;">{t("note")}</th>')
             print('</tr>')
             print('</thead>')
             print('<tbody>')
@@ -316,9 +317,9 @@ def generate_platform_question_sections(
                 answer_data = answers_by_region.get(region, {}).get(q["code"], {})
                 answer_value = (answer_data.get("selected_answer") or "").strip()
                 if not answer_value:
-                    answer_label = "Not assessed"
+                    answer_label = t("not_assessed")
                 elif answer_value in ["not_applicable", "not applicable"]:
-                    answer_label = "Not applicable"
+                    answer_label = t("not_applicable")
                 else:
                     answer_label = q["answers"].get(answer_value, answer_value)
 

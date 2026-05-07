@@ -12,9 +12,20 @@ sources:
     UK: data/regional/UK/x/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 X’s UGC data transparency is assessed through the [X API](https://docs.x.com/x-api/getting-started/about-x-api) across Brazil, the EU, and the UK, while advertising transparency relies on the [X Ads Repository](https://ads.twitter.com/ads-repository), available only in the EU under DSA obligations. Our request to access the X API under the DSA was submitted in October 2025 and, after multiple follow-up attempts, was definitively rejected in December without further justification, preventing effective use and assessment under these conditions. In the UGC dimension, X is placed in the Limited band across all regions. The API provides access to public post data and performs well on secondary criteria, including data format compliance, endpoint coverage, consistent data returns, and near-real-time availability. However, access is not free of charge, and no graphical interface for UGC data extraction is available. On advertising transparency, no repository is provided in Brazil or the UK. In the EU, although the X Ads Repository was introduced under DSA obligations, API access was not granted during the evaluation period, and the graphical interface consistently returned empty CSV files, rendering the repository non-functional in practice and placing it in the Negligible band. Overall, X presents moderate UGC transparency constrained by cost barriers, alongside advertising transparency that is effectively unavailable outside the EU and non-functional within it.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados de conteúdo gerado por usuários (UGC) do X é avaliada por meio da [X API](https://docs.x.com/x-api/getting-started/about-x-api) no Brasil, na União Europeia e no Reino Unido, enquanto a transparência de publicidade depende do [X Ads Repository](https://ads.twitter.com/ads-repository), disponível apenas na União Europeia sob obrigações do DSA. Nosso pedido de acesso à X API ao amparo do DSA foi submetido em outubro de 2025 e, após múltiplas tentativas de acompanhamento, foi definitivamente rejeitado em dezembro sem justificativa adicional, o que impediu o uso e a avaliação efetivos nessas condições. Na dimensão de UGC, o X situa-se na faixa Limitada em todas as regiões. A API oferece acesso a dados de postagens públicas e tem bom desempenho em critérios secundários, incluindo conformidade com o formato dos dados, cobertura de endpoints, retornos consistentes de dados e disponibilidade em tempo quase real. Entretanto, o acesso não é gratuito e não há interface gráfica disponível para a extração de dados de UGC. Quanto à transparência de publicidade, não há repositório no Brasil nem no Reino Unido. Na União Europeia, embora o X Ads Repository tenha sido introduzido sob as obrigações do DSA, o acesso por API não foi concedido durante o período de avaliação, e a interface gráfica retornava de forma consistente arquivos CSV vazios, tornando o repositório não funcional na prática e situando-o na faixa Negligenciável. No conjunto, o X apresenta transparência moderada de UGC limitada por barreiras de custo, ao lado de uma transparência de publicidade efetivamente indisponível fora da União Europeia e não funcional dentro dela.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("x")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions
@@ -68,4 +89,3 @@ generate_platform_question_sections(
     heading_level=3,
 )
 ```
-

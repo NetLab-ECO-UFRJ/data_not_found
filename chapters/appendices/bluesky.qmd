@@ -8,9 +8,20 @@ sources:
     UK: data/global/bluesky/ugc.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Bluesky's transparency is assessed through the [AT Protocol API](https://docs.bsky.app/) for user-generated content as a single global resource. The platform does not operate an advertising-based business model and was therefore not evaluated under the advertising framework. Its open architecture supports strong transparency in UGC data access, with key strengths including comprehensive endpoint coverage for extracting posts and author feeds, minimal authentication barriers, and consistent, high-performance data retrieval. The API provides documented response schemas and clear rate limit specifications. However, important limitations remain: documentation is available only in English and is often sparse, with some endpoints lacking detailed explanations, and there are no specific terms governing API use. Functional gaps include the absence of a graphical interface for data access and the lack of location-based filtering capabilities. In addition, while the platform enables user self-labeling, it does not provide dedicated labels for AI-generated content, hindering its identification. These constraints may limit certain research applications and oversight efforts, particularly for non-technical stakeholders.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência do Bluesky é avaliada por meio da [API do AT Protocol](https://docs.bsky.app/) para conteúdo gerado por usuários, como um recurso global único. A plataforma não opera um modelo de negócios baseado em publicidade e, portanto, não foi avaliada sob o framework de publicidade. Sua arquitetura aberta favorece uma forte transparência no acesso a dados de UGC, com destaques que incluem ampla cobertura de endpoints para extração de posts e feeds de autores, barreiras mínimas de autenticação e recuperação de dados consistente e de alto desempenho. A API disponibiliza esquemas de resposta documentados e especificações claras de limites de requisição. No entanto, permanecem limitações importantes: a documentação está disponível apenas em inglês e é frequentemente esparsa, com alguns endpoints carecendo de explicações detalhadas, e não há termos específicos que regulem o uso da API. As lacunas funcionais incluem a ausência de uma interface gráfica para acesso a dados e a falta de capacidades de filtragem por localização. Além disso, embora a plataforma permita a autorrotulagem por usuários, ela não oferece rótulos dedicados para conteúdo gerado por IA, dificultando sua identificação. Essas restrições podem limitar determinadas aplicações de pesquisa e esforços de fiscalização, especialmente para atores não técnicos.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -36,7 +47,12 @@ generate_platform_summary("bluesky")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -50,7 +66,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

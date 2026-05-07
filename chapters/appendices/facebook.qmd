@@ -12,9 +12,20 @@ sources:
     UK: data/regional/UK/meta/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Facebook’s UGC data transparency is assessed through the [Meta Content Library](https://transparency.meta.com/researchtools/meta-content-library/) as a single global resource applied across Brazil, the EU, and the UK, while advertising transparency draws on the [Meta Ad Library](https://www.facebook.com/ads/library), with region-specific access regimes. The Meta Content Library provides access to data from Facebook and other Meta platforms under very strict conditions: although it offers an API, its terms prohibit structured data extraction for external analysis, effectively limiting access and analysis to a pre-approved Secure Research Environment and rendering it unavailable for independent research purposes. As a result, Facebook scores minimally on UGC transparency, since—unlike the API—the Meta Content Library User Interface allows approved researchers to visualize and extract structured data on user-generated content across Meta platforms, but only above certain popularity-based follower thresholds that restrict data availability. Advertising transparency varies by region: the Meta Ad Library in the EU and the UK systematically covers all ad types served over the past year, though the UK version differs from the EU in that its GUI enables structured data extraction for ads labeled as political and “social issue” ads, which are banned in the EU. In Brazil, the tool is largely limited to ads labeled as political and “social issue” ads, as other ads can only be viewed while actively running and cannot be systematically extracted. Across all regions, the library provides free access, unique advertiser identifiers, and ad delivery periods, but lacks engagement metrics, granular spending data, complete targeting criteria, and specific rate-limit documentation, with the availability of such information varying by ad type.
+:::
 
+::: {.content-visible when-profile="pt"}
+A transparência de dados de UGC do Facebook é avaliada por meio da [Meta Content Library](https://transparency.meta.com/researchtools/meta-content-library/) como um recurso global único aplicado a Brasil, União Europeia e Reino Unido, enquanto a transparência de publicidade se baseia na [Meta Ad Library](https://www.facebook.com/ads/library), com regimes de acesso específicos por região. A Meta Content Library oferece acesso a dados do Facebook e de outras plataformas da Meta sob condições muito estritas: embora disponibilize uma API, seus termos proíbem a extração estruturada de dados para análise externa, restringindo, na prática, o acesso e a análise a um Secure Research Environment pré-aprovado e tornando-a indisponível para fins de pesquisa independente. Como resultado, o Facebook obtém uma pontuação mínima em transparência de UGC, pois — diferentemente da API — a interface gráfica da Meta Content Library permite que pesquisadores aprovados visualizem e extraiam dados estruturados sobre conteúdo gerado por usuários nas plataformas da Meta, mas apenas acima de certos limiares de popularidade baseados em número de seguidores que restringem a disponibilidade dos dados. A transparência publicitária varia conforme a região: a Meta Ad Library na UE e no Reino Unido cobre sistematicamente todos os tipos de anúncios veiculados no último ano, embora a versão do Reino Unido difira da UE na medida em que sua interface gráfica permite a extração estruturada de dados para anúncios rotulados como políticos e de “temas sociais”, os quais são proibidos na UE. No Brasil, a ferramenta limita-se em grande parte a anúncios rotulados como políticos e de “temas sociais”, já que os demais anúncios só podem ser visualizados enquanto estão ativamente em veiculação e não podem ser extraídos sistematicamente. Em todas as regiões, a biblioteca oferece acesso gratuito, identificadores únicos de anunciantes e períodos de veiculação dos anúncios, mas carece de métricas de engajamento, dados granulares de gastos, critérios completos de segmentação e documentação específica de limites de requisição, com a disponibilidade dessas informações variando conforme o tipo de anúncio.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("facebook")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

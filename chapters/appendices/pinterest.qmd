@@ -12,9 +12,20 @@ sources:
     UK: data/regional/UK/pinterest/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Pinterest provides no UGC data transparency resource enabling programmatic access to public content in any assessed region. In the EU, it offers curated datasets to selected researchers under its own conditions, but this does not meet the criteria applied in this analysis. Advertising transparency is assessed through the [Pinterest Ads Repository](https://ads.pinterest.com/ads-repository/) in Brazil and the EU, but no equivalent resource is available in the UK. Pinterest’s [REST API v5](https://developers.pinterest.com/docs/api/v5/introduction) is limited to authenticated account management and does not support programmatic extraction of public user-generated content in any jurisdiction. As no graphical interface exists for this purpose either, UGC data transparency is classified in the Not Available band across all regions. On the advertising side, Brazil and the EU fall within the Negligible range: the public Ads Repository provides GUI-based access to active and inactive ads, discloses advertiser identities and delivery periods, supports filtering by date range and thematic category, and returns consistent results. However, it offers no API access and does not allow structured data extraction, as current API versions have deprecated the ad repository endpoints available in earlier iterations. As such, basic GUI-level ad browsing in Brazil and the EU remains the only practically useful feature. Additional limitations include the absence of payer disclosure, engagement metrics, AI content labeling, and advertiser verification data.
+:::
 
+::: {.content-visible when-profile="pt"}
+O Pinterest não fornece nenhum recurso de transparência de dados de conteúdo gerado por usuários (UGC) que permita acesso programático ao conteúdo público em qualquer região avaliada. Na UE, oferece conjuntos de dados curados a pesquisadores selecionados sob suas próprias condições, mas isso não atende aos critérios aplicados nesta análise. A transparência publicitária é avaliada por meio do [Repositório de Anúncios do Pinterest](https://ads.pinterest.com/ads-repository/) no Brasil e na UE, mas não há recurso equivalente disponível no Reino Unido. A [REST API v5](https://developers.pinterest.com/docs/api/v5/introduction) do Pinterest é limitada ao gerenciamento autenticado de contas e não suporta extração programática de conteúdo público gerado por usuários em nenhuma jurisdição. Como também não existe interface gráfica para essa finalidade, a transparência de dados de UGC é classificada na faixa Indisponível em todas as regiões. Do lado da publicidade, o Brasil e a UE situam-se na faixa Negligenciável: o Repositório de Anúncios público fornece acesso por interface gráfica a anúncios ativos e inativos, divulga identidades dos anunciantes e períodos de veiculação, permite filtragem por intervalo de datas e categoria temática e retorna resultados consistentes. Entretanto, não oferece acesso por API e não permite extração estruturada de dados, pois as versões atuais da API descontinuaram os endpoints do repositório de anúncios disponíveis em iterações anteriores. Assim, a navegação básica de anúncios pela interface gráfica no Brasil e na UE permanece como o único recurso praticamente útil. Limitações adicionais incluem a ausência de divulgação do pagador, métricas de engajamento, identificação de conteúdo gerado por IA e dados de verificação do anunciante.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("pinterest")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions
@@ -68,4 +89,3 @@ generate_platform_question_sections(
     heading_level=3,
 )
 ```
-

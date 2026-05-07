@@ -1,0 +1,40 @@
+---
+title: "Sobre este relatório"
+number-sections: false
+---
+
+Este trabalho é resultado de uma colaboração entre o [NetLab UFRJ](https://www.netlab.eco.br), laboratório de pesquisa da Universidade Federal do Rio de Janeiro (Brasil), e o [Minderoo Centre for Technology and Democracy](https://www.minderoo.org/technology-and-democracy) da Universidade de Cambridge (Reino Unido).
+
+Fundado em 2013, o NetLab UFRJ é um dos principais laboratórios de pesquisa em internet do Brasil e se dedica à investigação e análise da desinformação digital e seus impactos no país, produzindo evidências empíricas para subsidiar o debate público e contribuir para impactos sociais significativos. Saiba mais no [site oficial do NetLab UFRJ](https://www.netlab.eco.br).
+
+O Minderoo Centre for Technology and Democracy (MCTD) é uma equipe independente de pesquisadores da Universidade de Cambridge dedicada a repensar as relações de poder entre as tecnologias digitais, a sociedade e o planeta. O centro reúne um amplo conjunto de partes interessadas, em uma abordagem multilateral, contribuindo para levar conhecimento especializado e uma diversidade de perspectivas às decisões sobre tecnologias digitais e o futuro da inteligência artificial. Saiba mais no [site oficial do Minderoo Centre for Technology and Democracy](https://www.minderoo.org/technology-and-democracy).
+
+**Direção de pesquisa**
+
+R. Marie Santini *(NetLab UFRJ)*\
+Hugo Leal *(Minderoo Centre for Technology & Democracy)*\
+Débora Salles *(NetLab UFRJ)*
+
+**Coordenação do projeto**
+
+Adriano Belisário *(NetLab UFRJ)*\
+Bruno Mattos *(NetLab UFRJ)*\
+Danielle Pinho *(NetLab UFRJ)*
+
+**Avaliações das plataformas**
+
+Anita Cuteanu *(Minderoo Centre for Technology & Democracy)*\
+Raphael Hernandes *(Minderoo Centre for Technology & Democracy)*\
+Fernando Ferreira *(NetLab UFRJ)*\
+Felipe Grael *(NetLab UFRJ)*\
+João Gabriel Haddad *(NetLab UFRJ)*\
+Lucas Murakami *(NetLab UFRJ)*\
+Rafael Cardoso *(NetLab UFRJ)*\
+Vinicius Branco *(NetLab UFRJ)*
+
+**Revisão e projeto editorial**
+
+Felipe Loureiro *(NetLab UFRJ)*\
+Rowena Jameson *(NetLab UFRJ)*\
+Gina Neff *(Minderoo Centre for Technology & Democracy)*\
+Ann Kristin Glenster *(Minderoo Centre for Technology & Democracy)*

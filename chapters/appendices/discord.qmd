@@ -12,9 +12,20 @@ sources:
     UK: data/global/discord/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Discord does not provide any public UGC or advertising data transparency mechanisms in any of the assessed regions. While the [Discord API](https://github.com/discord/discord-api-docs) exists, it is primarily designed for bot and application development within specific servers. Integrating such bots for large-scale research requires server administrators to authorize their inclusion and define channel-level permissions and intents, in accordance with the [Message Content Intent Review Policy](https://support-dev.discord.com/hc/zh-tw/articles/5324827539479-Message-Content-Intent-Review-Policy) and the [Message Content Privileged Intent FAQ](https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ). On the advertising transparency side, Discord had historically positioned itself as an [advertising-free platform](https://www.npr.org/2021/04/01/983159051/why-does-discord-not-use-ads-and-why-is-microsoft-interested-we-asked-discords-c), though this began to shift in 2025 with the [introduction of opt-in branded video ads](https://searchengineland.com/discord-enters-the-ad-arena-455956) tied to gaming perks. Despite this shift, the platform has not established a public ad repository or any transparency infrastructure in any part of the world. Both frameworks place Discord in the Not Available band, rendering independent research into the platform’s content and advertising ecosystems infeasible under the conditions assessed.
+:::
 
+::: {.content-visible when-profile="pt"}
+O Discord não disponibiliza nenhum mecanismo público de transparência de dados de UGC ou de publicidade em nenhuma das regiões avaliadas. Embora a [API do Discord](https://github.com/discord/discord-api-docs) exista, ela foi projetada principalmente para o desenvolvimento de bots e aplicações dentro de servidores específicos. A integração desses bots para pesquisa em larga escala exige que os administradores dos servidores autorizem sua inclusão e definam permissões e *intents* em nível de canal, em conformidade com a [Message Content Intent Review Policy](https://support-dev.discord.com/hc/zh-tw/articles/5324827539479-Message-Content-Intent-Review-Policy) e o [Message Content Privileged Intent FAQ](https://support-dev.discord.com/hc/en-us/articles/4404772028055-Message-Content-Privileged-Intent-FAQ). No que diz respeito à transparência de publicidade, o Discord historicamente se posicionou como uma [plataforma sem anúncios](https://www.npr.org/2021/04/01/983159051/why-does-discord-not-use-ads-and-why-is-microsoft-interested-we-asked-discords-c), embora isso tenha começado a mudar em 2025 com a [introdução de anúncios em vídeo de marca opcionais (opt-in)](https://searchengineland.com/discord-enters-the-ad-arena-455956) atrelados a benefícios para jogos. Apesar dessa mudança, a plataforma não estabeleceu um repositório público de anúncios nem qualquer infraestrutura de transparência em nenhuma parte do mundo. Ambos os frameworks colocam o Discord na faixa Not Available, tornando inviável a pesquisa independente sobre os ecossistemas de conteúdo e publicidade da plataforma sob as condições avaliadas.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -40,7 +51,12 @@ generate_platform_summary("discord")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -54,7 +70,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

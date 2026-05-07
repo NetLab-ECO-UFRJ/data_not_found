@@ -12,9 +12,20 @@ sources:
     UK: data/global/kwai/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Kwai does not provide any UGC or advertising data transparency mechanisms in any of the assessed regions. Only third-party, scraping-based APIs exist, which fall outside the scope of this assessment. The platform also lacks any graphical interface for data access and does not operate an advertising repository. A brief political ad transparency tool launched in Brazil was [discontinued within approximately one month of its launch](https://desinformante.com.br/kwai-anuncios-politicos/). With no formal transparency resources available, all secondary criteria return negative results. Both frameworks therefore yield a score of zero, placing Kwai in the Not Available band and rendering independent research into the platform’s data and advertising ecosystems infeasible under the conditions assessed.
+:::
 
+::: {.content-visible when-profile="pt"}
+O Kwai não disponibiliza nenhum mecanismo de transparência de dados de UGC ou de publicidade em nenhuma das regiões avaliadas. Existem apenas APIs de terceiros, baseadas em raspagem (*scraping*), que estão fora do escopo desta avaliação. A plataforma também não possui qualquer interface gráfica para acesso a dados nem opera um repositório de publicidade. Uma breve ferramenta de transparência de anúncios políticos lançada no Brasil foi [descontinuada cerca de um mês após o seu lançamento](https://desinformante.com.br/kwai-anuncios-politicos/). Sem recursos formais de transparência disponíveis, todos os critérios secundários retornam resultados negativos. Ambos os frameworks resultam, portanto, em uma pontuação zero, colocando o Kwai na faixa Not Available e tornando inviável a pesquisa independente sobre os ecossistemas de dados e publicidade da plataforma sob as condições avaliadas.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("kwai")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

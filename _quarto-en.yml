@@ -17,7 +17,5 @@ format:
     code-links:
       - text: "English"
         href: /en/
-        icon: globe
       - text: "Português"
         href: /pt/
-        icon: globe

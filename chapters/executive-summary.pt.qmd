@@ -1,0 +1,124 @@
+---
+title: "Sumário Executivo"
+---
+```{python}
+#| label: setup
+#| include: false
+
+import sys
+from pathlib import Path
+
+project_root = Path.cwd()
+while not (project_root / 'utils').exists() and project_root != project_root.parent:
+    project_root = project_root.parent
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+```
+
+**O *Índice de Transparência de Redes Sociais* oferece uma avaliação detalhada da crescente crise de transparência que compromete a pesquisa de interesse público, a fiscalização democrática e a credibilidade do mercado publicitário em um mundo cada vez mais online.** Desenvolvido em colaboração por equipes de pesquisa do **NetLab** da Universidade Federal do Rio de Janeiro (Brasil) e do **Minderoo Centre for Technology & Democracy** da Universidade de Cambridge (Reino Unido), o relatório busca contribuir para o avanço do conhecimento sobre a transparência de dados em plataformas online. A pesquisa se baseia em um trabalho inicialmente conduzido pelo NetLab UFRJ em 2024, voltado à avaliação do acesso a dados no Brasil, posteriormente expandido para abranger 15 das principais plataformas em três regiões — União Europeia (UE), Reino Unido e Brasil. As plataformas foram classificadas em uma escala de 100 pontos, de transparência Significativa a Insignificante, com base nas condições de acesso a dados de conteúdos gerados por usuários e de publicidade.
+
+**Nas jurisdições e plataformas analisadas, a transparência de dados ainda é desigual e, em muitos casos, limitada.** Esses padrões não estão alinhados às recomendações da Organização das Nações Unidas (ONU) e levantam preocupações importantes sobre a integridade da informação e a governança democrática. A ONU reconhece a integridade da informação como um elemento central de um ecossistema digital saudável e aponta a transparência como um de seus princípios fundamentais. Recomendamos que tomadores de decisão garantam uma transparência significativa, que permita o acesso de organizações de pesquisa independentes e confiáveis, além de jornalistas, sociedade civil e organismos internacionais. Para os fins deste relatório, entendemos transparência significativa como a existência de mecanismos de acesso a dados abertos, bem documentados e com poucas barreiras à sua utilização. Os resultados mostram que as práticas atuais ainda estão distantes desse ideal e permitem comparar como diferentes regiões se saem sob distintos marcos regulatórios.
+
+**Regulações específicas estão melhorando as condições de acesso aos dados.** Entre as regiões avaliadas, a União Europeia se destaca por contar com um quadro regulatório específico de transparência para dados de plataformas de redes sociais. A Lei de Serviços Digitais (DSA) introduziu regras para o acesso a dados de conteúdos gerados por usuários e de publicidade, e nossa avaliação aponta melhores condições de acesso na UE — especialmente no que diz respeito à transparência da publicidade. O Brasil, assim como grande parte do Sul Global, não possui uma legislação equivalente e apresenta, de forma consistente, as pontuações mais baixas, já que as políticas de acesso a dados das plataformas seguem sendo, em grande medida, voluntárias. O Reino Unido, por sua vez, registra uma pontuação média mais próxima da UE. Embora a Lei de Segurança Online estabeleça mecanismos de supervisão, ela se apoia sobretudo em avaliações caso a caso por autoridades regulatórias e não define um regime abrangente de transparência para acesso a dados de plataformas online. Uma possível explicação é que o país esteja se beneficiando indiretamente do chamado "Efeito Bruxelas", pelo qual regulações da UE acabam influenciando práticas corporativas para além de suas fronteiras, mesmo onde não se aplicam formalmente.
+
+**No entanto, as diferenças regulatórias se mostram menos relevantes do que se poderia esperar: independentemente da existência de marcos regulatórios, os obstáculos ao acesso a dados são semelhantes em todas as plataformas analisadas.** Ou seja, por si só, a existência de normas não garante transparência nem acesso efetivo a dados, já que sua implementação ainda depende, em grande medida, da forma como as próprias plataformas interpretam e operacionalizam essas obrigações. Desafios relevantes de implementação e fiscalização persistem, inclusive na UE, que liderou a adoção de regras mais abrangentes sobre acesso a dados. A ausência de protocolos comuns de acesso e de padrões de qualidade, somada a uma aplicação ainda limitada da lei, reduz o impacto do DSA. Nossa avaliação dialoga com pesquisas anteriores ao mostrar que plataformas como X, Snapchat e Pinterest ainda não atingem padrões mínimos de transparência, embora abrangidas pelo DSA. Isso aponta para um problema mais amplo: a existência de marcos regulatórios formais não se traduz automaticamente em acesso funcional e confiável a dados para pesquisas de interesse público.
+
+**A transparência de dados não é um fim em si, mas parte de um esforço mais amplo para viabilizar a responsabilização e a fiscalização democrática das plataformas de redes sociais.** Empresas, legisladores e pesquisadores precisam atuar de forma articulada para garantir que o acesso a dados seja transparente, esteja em conformidade com a lei e possa ser efetivamente utilizado para fins de interesse público. As lacunas persistentes na forma como a transparência e o acesso a dados são implementados precisam ser enfrentadas para proteger a integridade dos ecossistemas de informação online. Isso demanda ação coordenada entre diferentes atores, e este relatório busca contribuir para esse esforço.
+
+## Visão Geral da Avaliação {#eval-overview}
+
+
+::: {.grid style="margin: 20px 0;"}
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #EDEDED; color: #9D9D9C; border: 1px solid #d0d0d0; border-radius: 5px; text-align: center; font-weight: 600;"}
+Não disponível (0)
+:::
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #EA4E54; color: #ffffff; border: 1px solid #ddd; border-radius: 5px; text-align: center; font-weight: 600;"}
+Insignificante (1–20)
+:::
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #F28B4C; color: #663A1F; border: 1px solid #ddd; border-radius: 5px; text-align: center; font-weight: 600;"}
+Mínima (21–40)
+:::
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #F3CB00; color: #5C4A00; border: 1px solid #ddd; border-radius: 5px; text-align: center; font-weight: 600;"}
+Insuficiente (41–60)
+:::
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #41B5DF; color: #1A4A5C; border: 1px solid #ddd; border-radius: 5px; text-align: center; font-weight: 600;"}
+Limitada (61–80)
+:::
+
+::: {.g-col-6 .g-col-md-2 style="padding: 10px; background-color: #496AB1; color: #ffffff; border: 1px solid #ddd; border-radius: 5px; text-align: center; font-weight: 600;"}
+Significativa (81–100)
+:::
+
+:::
+
+### Conteúdo Gerado por Usuários (UGC)
+
+```{python}
+from utils.summary_table import generate_summary_heatmap
+from IPython.display import HTML, display
+
+display(HTML(generate_summary_heatmap('ugc', include_average_row=True, show_values=False)))
+
+```
+
+### Publicidade
+
+```{python}
+
+display(HTML(generate_summary_heatmap('ads', include_average_row=True, show_values=False)))
+
+```
+
+::: {.callout-note}
+O Bluesky foi excluído da avaliação de Publicidade, pois a plataforma não oferece anúncios.
+:::
+
+## Principais resultados {#key-findings}
+
+* **A transparência de dados nas plataformas de redes sociais permanece baixa na União Europeia, no Brasil e no Reino Unido.** Nossos resultados mostram que serviços amplamente utilizados não oferecem mecanismos adequados de acesso a dados — seja por meio de APIs ou de interfaces gráficas — de conteúdos gerados por usuários ou de publicidade, em nenhuma das regiões avaliadas. O Reddit, por exemplo, disponibiliza acesso programático a dados de conteúdos públicos gerados por usuários, mas não oferece acesso a dados de publicidade em nenhuma região. O X (antigo Twitter) também permite o acesso a dados de conteúdos públicos gerados por usuários, porém a custos proibitivos, enquanto seu repositório de publicidade, disponível apenas na UE, não retorna resultados. Já a Meta apresenta acesso Significativo a dados de publicidade no Reino Unido, mas sua transparência em relação a conteúdos gerados por usuários foi classificada como Insignificante em todas as regiões analisadas. Plataformas como TikTok e LinkedIn, por sua vez, oferecem, na melhor das hipóteses, níveis de transparência Insuficientes ou Limitados tanto para dados de conteúdos gerados por usuários quanto para dados de publicidade.
+
+* **As disparidades no acesso a dados ao redor do mundo refletem um modelo de transparência seletiva, orientado pela conformidade regulatória.** As condições variam entre jurisdições — especialmente no caso dos dados de publicidade —, com níveis mais elevados de acesso no Reino Unido e na UE, onde há estruturas regulatórias mais robustas ou, no caso britânico, possíveis efeitos indiretos dessas regulações. O Brasil, por sua vez, não conta com um marco específico para a transparência das plataformas e apresenta, de forma consistente, os níveis mais baixos de acesso a dados. Em média, o Reino Unido registra resultados mais próximos aos da UE.
+
+* **Mecanismos robustos de acesso a dados de conteúdos públicos gerados por usuários ainda são escassos.** Bluesky e YouTube foram as únicas plataformas cujas APIs públicas alcançaram, de forma consistente em todas as regiões avaliadas, um nível de acesso considerado Significativo em nossa análise. Nessas plataformas, não há restrições quanto ao tipo de conteúdo público que pode ser recuperado, e as funcionalidades disponíveis tiveram bom desempenho nos testes realizados. X, Telegram e Reddit, por sua vez, apresentam limitações em suas APIs — no caso do X, sobretudo pelos custos associados ao acesso. Já os dados de conteúdos públicos gerados por usuários do Facebook e do Instagram só podem ser acessados por meio da Biblioteca de Conteúdos da Meta, cuja API é restrita a ambientes seguros e controlados e não permite a extração de dados desagregados para a infraestrutura do próprio usuário. Embora plataformas como LinkedIn e TikTok ofereçam APIs para pesquisadores no contexto do DSA na UE, Pinterest e Snapchat operam apenas com solicitações diretas de dados por parte de pesquisadores, o que é considerado insuficiente segundo nossa abordagem metodológica.
+
+* **As ferramentas disponíveis para acessar e exportar dados de publicidade ainda são bastante limitadas para análises mais aprofundadas.** Pesquisadores enfrentam dificuldades para avaliar de forma consistente as práticas de segmentação, o alcance dos anúncios e seus impactos sociais mais amplos, devido às limitações das APIs e interfaces gráficas, que oferecem capacidades restritas de busca e acesso limitado a dados granulares. Plataformas como Meta, LinkedIn e TikTok permitem a busca de anúncios por palavras-chave, mas outras — como X, Google (YouTube) e Pinterest — não oferecem esse recurso, restringindo a descoberta e a coleta de dados a pesquisas baseadas nos nomes dos anunciantes. Além disso, muitas plataformas divulgam dados de alcance e segmentação em faixas amplas, o que limita tanto a análise independente quanto a capacidade dos próprios anunciantes de avaliar com precisão o desempenho das campanhas e o retorno sobre o investimento.
+
+
+## Recomendações prioritárias {#key-recommendations}
+
+**Plataformas de redes sociais**
+
+**R1 — Garantir acesso universal e significativo a todos os dados de publicidade.** As plataformas devem oferecer acesso gratuito, aberto e programático a repositórios de publicidade que reúnam o conjunto completo de dados sobre anúncios, por meio de APIs e interfaces gráficas que atendam a padrões rigorosos de qualidade e não diferenciem o acesso com base no conteúdo do anúncio. Isso é fundamental para permitir que pesquisadores e reguladores identifiquem riscos, avaliem a conformidade e assegurem a responsabilização nos ecossistemas de informação online.
+
+**R2 — Garantir acesso universal e significativo a dados de conteúdos públicos gerados por usuários para fins de interesse público.** As plataformas devem oferecer acesso gratuito, aberto e programático a dados de conteúdos públicos gerados por usuários, fora de ambientes controlados ou restritos, garantindo padrões claros de integridade e qualidade e disponibilizando esses dados por meio de APIs e interfaces gráficas que atendam a diferentes níveis de capacidade técnica. Isso é fundamental para assegurar o cumprimento das obrigações legais pelas plataformas e para que cidadãos e tomadores de decisão tenham acesso às informações essenciais de que precisam.
+
+**R3 — Acabar com práticas seletivas e fragmentadas de transparência de dados.** As plataformas devem alinhar suas práticas globais de transparência, tanto para dados de conteúdos gerados por usuários quanto de publicidade, aos padrões mais abertos disponíveis, em vez de se limitarem a níveis mínimos de conformidade ou a exigências específicas de cada jurisdição. Isso é essencial para reduzir a transparência seletiva decorrente de uma supervisão regulatória desigual.
+
+**R4 — Fornecer acesso a dados não públicos a pesquisadores devidamente credenciados, nos limites estabelecidos pela regulação e supervisão democrática.** O acesso a dados não públicos das plataformas é essencial para monitorar os riscos e danos que elas podem gerar, bem como para auditar de forma independente as métricas de transparência que divulgam. Na União Europeia, esse tipo de acesso já é formalmente previsto no Artigo 40 do DSA. Embora este relatório não avalie diretamente o acesso a dados não públicos, destacamos a importância de estabelecer processos robustos de credenciamento de pesquisadores e protocolos seguros que permitam sua disponibilização de forma responsável.
+
+**R5 — Fornecer acesso a dados sobre conteúdos moderados e removidos.** Esses dados, tanto no nível de conteúdos gerados por usuários quanto de publicidade, são essenciais para compreender ameaças à integridade da informação e avaliar como as plataformas as enfrentam e moderam. As empresas devem preservar essas informações em bases auditáveis, em vez de apagá-las ou permitir sua perda.
+
+**Governança internacional**
+
+**R6 — Promover a agenda de integridade da informação por meio de padrões de transparência e acesso a dados.** Os mecanismos de transparência de dados devem evoluir de compromissos autorregulados para estruturas regulatórias juridicamente vinculantes, capazes de garantir uma supervisão efetiva. Esse processo deve ser apoiado pelo estabelecimento e pela promoção de princípios e normas internacionais que orientem as dimensões técnicas, éticas e operacionais do acesso a dados.
+
+**Regulação regional**
+
+**R7 — União Europeia: Aplicar integralmente os artigos 39 e 40 da Lei de Serviços Digitais.** A Comissão Europeia deve assegurar a implementação efetiva dos mecanismos de acesso a dados de publicidade e de conteúdos gerados por usuários, por meio de protocolos padronizados, e estar preparada para impor sanções significativas — incluindo multas substanciais e, quando necessário, a suspensão temporária de serviços — em caso de descumprimento. Nosso relatório sugere que essa medida pode gerar impactos que vão além dos limites da UE.
+
+**R8 — Brasil: Consolidar princípios jurídicos existentes em um marco de transparência específico para o acesso a dados de plataformas digitais.** As autoridades brasileiras devem desenvolver um marco específico de transparência para dados de plataformas de redes sociais, incorporando lições de iniciativas internacionais e, ao mesmo tempo, consolidando princípios já presentes nas legislações de proteção de dados, defesa do consumidor e proteção da criança. Esse esforço deve se apoiar na tradição multissetorial de governança da internet adotada pelo país.
+
+**R9 — Reino Unido: Superar a supervisão caso a caso e avançar para normas de transparência e acesso a dados.** O Reino Unido deve adotar um marco proativo de transparência para dados de plataformas digitais, inspirado nas lições do DSA da União Europeia, e contribuir para reduzir a lacuna entre pesquisadores e instituições do país e do bloco europeu.
+
+**R10 — Brasil e Reino Unido: Estabelecer a legalidade e o uso ético de técnicas de raspagem de dados para fins de pesquisa de interesse público.** As autoridades brasileiras e britânicas devem se alinhar às disposições do DSA sobre dados publicamente disponíveis e apoiar explicitamente o uso legal e ético da extração de dados da web para fins de pesquisa e fiscalização de interesse público, especialmente nos casos em que a transparência oferecida pelas plataformas seja insuficiente.
+
+**Pesquisadores e instituições de interesse público**
+
+**R11 — Promover consórcios internacionais de pesquisa e fomentar a colaboração interdisciplinar.** Pesquisadores e instituições de pesquisa podem compartilhar conhecimento e recursos técnicos por meio de colaborações multinacionais, intersetoriais e interdisciplinares, apoiando ativamente esforços regulatórios ao contribuir com sua expertise, documentar sucessos e fracassos e atuar em diferentes jurisdições para fortalecer a base de evidências para a governança global das plataformas. Encorajamos financiadores de ciência, tecnologia e inovação a apoiar iniciativas de pesquisa transnacionais.
+
+**R12 — Desenvolver estratégias de monitoramento para ambientes com baixo acesso a dados.** Pesquisadores devem criar ferramentas de código aberto e desenvolver abordagens técnicas e metodológicas que possam ser facilmente implementadas em contextos de transparência de dados severamente limitada e com restrições de recursos, incluindo ferramentas baseadas em navegador, compartilhamento de dados em nuvem e iniciativas colaborativas de doação de dados.

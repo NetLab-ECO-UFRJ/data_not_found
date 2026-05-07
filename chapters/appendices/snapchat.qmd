@@ -12,9 +12,20 @@ sources:
     UK: data/global/snapchat/ads.yml
 ---
 
+::: {.content-visible when-profile="en"}
 Snapchat provides no UGC data transparency resource enabling programmatic access to public content in any assessed region. In the EU, it offers curated datasets to selected researchers under its own conditions, but this does not meet the criteria applied in this analysis. Advertising transparency is assessed through the platform’s [Ads Gallery API](https://developers.snap.com/api/marketing-api/Ads-Gallery-Api/Introduction) and [GUI](https://adsgallery.snap.com), nominally available only in the EU, with no equivalent resource in Brazil or the UK. Under the UGC framework, the platform offers no public API, no graphical tool, and no structured data access program for extracting user-generated content in any of the assessed regions, placing UGC transparency in the Not Available band across all three. On advertising, Brazil and the UK score zero across all criteria, as no advertising data access tools are available in these markets. In the EU, Snapchat nominally provides an Ads Gallery API and GUI scoped to EU-delivered advertising content; however, the API consistently returned rate-limit errors during independent testing, and the GUI did not yield any data on ads served in response to any query, rendering functional verification impossible. Overall, advertising transparency ranges from Not Available in Brazil and the UK to Negligible in the EU, indicating that independent research on Snapchat’s content and advertising ecosystems is effectively constrained by the absence of operational data access infrastructure.
+:::
 
+::: {.content-visible when-profile="pt"}
+O Snapchat não fornece nenhum recurso de transparência de dados de conteúdo gerado por usuários (UGC) que permita acesso programático ao conteúdo público em qualquer região avaliada. Na UE, oferece conjuntos de dados curados a pesquisadores selecionados sob suas próprias condições, mas isso não atende aos critérios aplicados nesta análise. A transparência publicitária é avaliada por meio da [Ads Gallery API](https://developers.snap.com/api/marketing-api/Ads-Gallery-Api/Introduction) e da [interface gráfica](https://adsgallery.snap.com) da plataforma, nominalmente disponíveis apenas na UE, sem recurso equivalente no Brasil ou no Reino Unido. Sob o quadro de UGC, a plataforma não oferece API pública, nem ferramenta gráfica, nem programa estruturado de acesso a dados para extração de conteúdo gerado por usuários em qualquer das regiões avaliadas, colocando a transparência de UGC na faixa Indisponível nas três. Em publicidade, o Brasil e o Reino Unido pontuam zero em todos os critérios, pois não há ferramentas de acesso a dados publicitários disponíveis nesses mercados. Na UE, o Snapchat fornece nominalmente uma Ads Gallery API e uma interface gráfica voltadas ao conteúdo publicitário veiculado na UE; entretanto, a API retornou consistentemente erros de limite de requisições durante testes independentes, e a interface gráfica não retornou nenhum dado sobre anúncios veiculados em resposta a qualquer consulta, tornando a verificação funcional impossível. No geral, a transparência publicitária varia de Indisponível no Brasil e no Reino Unido a Negligenciável na UE, indicando que a pesquisa independente sobre os ecossistemas de conteúdo e publicidade do Snapchat é efetivamente restringida pela ausência de infraestrutura operacional de acesso a dados.
+:::
+
+::: {.content-visible when-profile="en"}
 ## Transparency Assessment
+:::
+::: {.content-visible when-profile="pt"}
+## Avaliação de transparência
+:::
 
 
 ```{python}
@@ -41,7 +52,12 @@ generate_platform_summary("snapchat")
 
 
 
+::: {.content-visible when-profile="en"}
 ## User-Generated Content
+:::
+::: {.content-visible when-profile="pt"}
+## Conteúdo gerado por usuários
+:::
 
 ```{python}
 #| label: ugc-questions
@@ -55,7 +71,12 @@ generate_platform_question_sections(
 )
 ```
 
+::: {.content-visible when-profile="en"}
 ## Advertising
+:::
+::: {.content-visible when-profile="pt"}
+## Publicidade
+:::
 
 ```{python}
 #| label: ads-questions

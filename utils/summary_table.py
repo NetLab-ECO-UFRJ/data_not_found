@@ -7,6 +7,7 @@ from typing import Dict, Optional, Union
 import yaml
 from .scoring import calculate_platform_score
 from .quarto_helpers import parse_qmd_frontmatter
+from .i18n import t
 
 
 def get_score_class(score: float) -> str:
@@ -160,6 +161,22 @@ SCORE_BANDS = [
 ]
 
 
+_BAND_KEYS = {
+    'Not Available': 'score_band_not_available',
+    'Negligible': 'score_band_negligible',
+    'Minimal': 'score_band_minimal',
+    'Deficient': 'score_band_deficient',
+    'Limited': 'score_band_limited',
+    'Meaningful': 'score_band_meaningful',
+}
+
+
+def score_band_label_pt(label_en: str) -> str:
+    """Translate a SCORE_BANDS English label via the active Quarto profile."""
+    key = _BAND_KEYS.get(label_en)
+    return t(key) if key else label_en
+
+
 
 
 def generate_summary_heatmap(
@@ -240,10 +257,10 @@ def generate_summary_heatmap(
 <table class="heatmap-table">
     <thead>
         <tr>
-            <th>Platform</th>
-            <th>Brazil</th>
-            <th>EU</th>
-            <th>UK</th>
+            <th>''' + t("platform") + '''</th>
+            <th>''' + t("brazil") + '''</th>
+            <th>''' + t("eu") + '''</th>
+            <th>''' + t("uk") + '''</th>
         </tr>
     </thead>
     <tbody>
@@ -276,7 +293,7 @@ def generate_summary_heatmap(
         html += f'        <tr>\n'
         icon = get_platform_icon(platform)
         vlop_key = platform.lower().split('/')[0].strip()
-        vlop_badge = '<span class="vlop-badge" title="Very Large Online Platform (EU DSA)">VLOP</span>' if vlop_key in VLOP_PLATFORMS else ''
+        vlop_badge = f'<span class="vlop-badge" title="{t("vlop_tooltip")}">VLOP</span>' if vlop_key in VLOP_PLATFORMS else ''
         html += f'            <td class="platform-name">{icon}{platform}{vlop_badge}</td>\n'
 
         for region in ['BR', 'EU', 'UK']:
@@ -297,7 +314,7 @@ def generate_summary_heatmap(
 
     if include_average_row and show_values:
         html += '        <tr class="average-row">\n'
-        html += '            <td class="platform-name"><strong>Average</strong></td>\n'
+        html += f'            <td class="platform-name"><strong>{t("average")}</strong></td>\n'
         for region in ['BR', 'EU', 'UK']:
             avg = region_averages.get(region)
             if avg is None:
@@ -312,7 +329,7 @@ def generate_summary_heatmap(
 </table>
 <p style="font-size: 12px; color: #555; margin-top: 4px;">
   <span class="vlop-badge">VLOP</span>
-  &nbsp;Very Large Online Platform designated under the EU Digital Services Act (DSA), subject to enhanced transparency and accountability obligations.
+  &nbsp;''' + t("vlop_caption") + '''
 </p>
 '''
 
