@@ -12,35 +12,6 @@ book:
   date: "April, 2026"
   sidebar:
     collapse-level: 1
-  chapters:
-    - index.qmd
-    - chapters/foreword.qmd
-    - chapters/executive-summary.qmd
-    - chapters/introduction.qmd
-    - chapters/information-integrity.qmd
-    - chapters/regulation.qmd
-    - chapters/methodology.qmd
-    - chapters/results.qmd
-    - chapters/recommendations.qmd
-    - chapters/about.qmd
-    - chapters/references.qmd
-    - part: "Platforms Evaluation"
-      chapters:
-        - chapters/appendices/bluesky.qmd
-        - chapters/appendices/discord.qmd
-        - chapters/appendices/facebook.qmd
-        - chapters/appendices/instagram.qmd
-        - chapters/appendices/kwai.qmd
-        - chapters/appendices/linkedin.qmd
-        - chapters/appendices/pinterest.qmd
-        - chapters/appendices/reddit.qmd
-        - chapters/appendices/snapchat.qmd
-        - chapters/appendices/telegram.qmd
-        - chapters/appendices/threads.qmd
-        - chapters/appendices/tiktok.qmd
-        - chapters/appendices/whatsapp.qmd
-        - chapters/appendices/x.qmd
-        - chapters/appendices/youtube.qmd
 
 
 file-scope: true
