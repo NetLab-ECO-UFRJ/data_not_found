@@ -12,7 +12,8 @@ COPY pyproject.toml uv.lock ./
 COPY . .
 
 RUN uv sync --frozen
-RUN uv run quarto render 2>&1 || (echo "=== QUARTO RENDER FAILED ===" && exit 1)
+RUN uv run quarto render --profile en 2>&1 || (echo "=== QUARTO RENDER (en) FAILED ===" && exit 1)
+RUN uv run quarto render --profile pt 2>&1 && echo "PT profile rendered" || echo "No PT profile, skipping"
 RUN test -f /app/_output/index.html || (echo "ERROR: index.html not found" && exit 1)
 
 FROM nginx:alpine
