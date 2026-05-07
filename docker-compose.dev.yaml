@@ -1,0 +1,32 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: data-not-found-dev
+    hostname: data-not-found-dev
+    restart: unless-stopped
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.dnf-dev-http.entryPoints=http
+      - traefik.http.routers.dnf-dev-http.rule=Host(`${DEV_DOMAIN}`)
+      - traefik.http.routers.dnf-dev-http.middlewares=redirect-to-https
+      - traefik.http.routers.dnf-dev-https.entryPoints=https
+      - traefik.http.routers.dnf-dev-https.rule=Host(`${DEV_DOMAIN}`)
+      - traefik.http.routers.dnf-dev-https.tls=true
+      - traefik.http.routers.dnf-dev-https.tls.certresolver=letsencrypt
+      - traefik.http.routers.dnf-dev-https.middlewares=gzip
+      - traefik.http.services.dnf-dev.loadbalancer.server.port=80
+      - traefik.docker.network=web
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+    networks:
+      - web
+
+networks:
+  web:
+    external: true

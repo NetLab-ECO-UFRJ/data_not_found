@@ -1,46 +1,26 @@
-name: Deploy to GitHub Pages
+name: Deploy preview
 
 on:
   push:
-    branches: [main]
-  workflow_dispatch:
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+    branches: [main, dev]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  deploy-main:
+    if: github.ref == 'refs/heads/main'
+    runs-on: self-hosted
     steps:
-      - uses: actions/checkout@v4
+      - name: Pull and rebuild
+        run: |
+          cd ~/data_not_found
+          git pull origin main
+          docker compose up --build -d
 
-      - uses: astral-sh/setup-uv@v4
-
-      - uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install Python dependencies
-        run: uv sync
-
-      - name: Render Quarto book
-        run: uv run quarto render
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _output/
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  deploy-dev:
+    if: github.ref == 'refs/heads/dev'
+    runs-on: self-hosted
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Pull and rebuild (dev)
+        run: |
+          cd ~/data_not_found
+          git pull origin dev
+          docker compose --env-file .env.dev -f docker-compose.dev.yaml up --build -d
