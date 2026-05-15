@@ -55,7 +55,7 @@ generate_platform_summary("discord")
 ## User-Generated Content
 :::
 ::: {.content-visible when-profile="pt"}
-## Conteúdo gerado por usuários
+## Conteúdos gerados por usuários
 :::
 
 ```{python}
