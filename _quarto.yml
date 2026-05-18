@@ -42,7 +42,7 @@ format:
     embed-resources: false
 
 execute:
-  freeze: auto
+  freeze: false
   parallel: true
   echo: false
   warning: false
