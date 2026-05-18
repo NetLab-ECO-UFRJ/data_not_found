@@ -7,122 +7,122 @@ special-criteria_answers:
 - code: UGC_SC1
   selected_answer: researchers_only
   notes: TikTok provides a [Research API](https://developers.tiktok.com/doc/about-research-api) that allows independent and academic researchers to access data.
-  notes_pt: TikTok provides a [Research API](https://developers.tiktok.com/doc/about-research-api) that allows independent and academic researchers to access data.
+  notes_pt: O TikTok fornece uma [Research API](https://developers.tiktok.com/doc/about-research-api) que permite que pesquisadores acadêmicos e independentes acessem dados.
 - code: UGC_SC2
   selected_answer: researchers_only
   notes: In theory, it is possible to extract data from any public posts on TikTok. However, [recent research](https://arxiv.org/abs/2506.09746) has identified disparities in the data that can be reliably retrieved through the platform’s API.
-  notes_pt: In theory, it is possible to extract data from any public posts on TikTok. However, [recent research](https://arxiv.org/abs/2506.09746) has identified disparities in the data that can be reliably retrieved through the platform’s API.
+  notes_pt: Em teoria, é possível extrair dados de qualquer postagem pública no TikTok. No entanto, [recent research](https://arxiv.org/abs/2506.09746) identificou disparidades nos dados que podem ser recuperados de forma confiável por meio da API da plataforma.
 - code: UGC_SC3
   selected_answer: researchers_only
   notes: Once approved, researchers are not charged to use the TikTok Research API.
-  notes_pt: Once approved, researchers are not charged to use the TikTok Research API.
+  notes_pt: Uma vez aprovado, os pesquisadores não serão cobrados pelo uso da API TikTok Research.
 - code: UGC_SC4
   selected_answer: 'no'
   notes: The platform does not provide a graphical interface for accessing or extracting public user-generated content data.
-  notes_pt: The platform does not provide a graphical interface for accessing or extracting public user-generated content data.
+  notes_pt: A plataforma não fornece uma interface gráfica para acessar ou extrair dados públicos de conteúdo gerado pelo usuário.
 accessibility_answers:
 - code: UGC_OC1
   selected_answer: 'yes'
   notes: During our tests, we were able to extract data from public user-generated content directly from the API response.
-  notes_pt: During our tests, we were able to extract data from public user-generated content directly from the API response.
+  notes_pt: Durante nossos testes, conseguimos extrair dados de conteúdo público gerado pelo usuário diretamente da resposta da API.
 - code: UGC_OC2
   selected_answer: 'yes'
   notes: 'The TikTok Research API issues access tokens that are valid for 7,200 seconds. However, token renewal does not interrupt data collection because the API relies on stateful pagination: the [`search_id`](https://developers.tiktok.com/doc/research-api-specs-query-videos/) preserves the search context, and the cursor maintains the position within the result set, allowing paginated retrieval to resume seamlessly after token refresh without duplication or data loss.'
-  notes_pt: 'The TikTok Research API issues access tokens that are valid for 7,200 seconds. However, token renewal does not interrupt data collection because the API relies on stateful pagination: the [`search_id`](https://developers.tiktok.com/doc/research-api-specs-query-videos/) preserves the search context, and the cursor maintains the position within the result set, allowing paginated retrieval to resume seamlessly after token refresh without duplication or data loss.'
+  notes_pt: 'A API TikTok Research emite tokens de acesso válidos por 7.200 segundos. No entanto, a renovação do token não interrompe a coleta de dados porque a API depende da paginação com estado: o [`search_id`](https://developers.tiktok.com/doc/research-api-specs-query-videos/) preserva o contexto da pesquisa, e o cursor mantém a posição dentro do conjunto de resultados, permitindo que a recuperação paginada seja retomada perfeitamente após a atualização do token, sem duplicação ou perda de dados.'
 - code: UGC_OC3
   selected_answer: 'yes'
   notes: The [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) endpoint enables the retrieval of information about videos filtered by specific video ID.
-  notes_pt: The [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) endpoint enables the retrieval of information about videos filtered by specific video ID.
+  notes_pt: O endpoint [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) permite a recuperação de informações sobre vídeos filtrados por ID de vídeo específico.
 - code: UGC_OC4
   selected_answer: 'no'
   notes: There is no dedicated endpoint for extracting an individual author’s videos through the TikTok Research API. While endpoints exist for user metadata, such as bio, follower count, and total number of posted videos, as well as for liked videos, pinned videos, followers, following, and reposted content, there are no specific endpoints for retrieving a user’s public posts or their comments. Workarounds, such as querying videos by a specific username, do not appear to function reliably.
-  notes_pt: There is no dedicated endpoint for extracting an individual author’s videos through the TikTok Research API. While endpoints exist for user metadata, such as bio, follower count, and total number of posted videos, as well as for liked videos, pinned videos, followers, following, and reposted content, there are no specific endpoints for retrieving a user’s public posts or their comments. Workarounds, such as querying videos by a specific username, do not appear to function reliably.
+  notes_pt: Não há um endpoint dedicado para extrair vídeos de um autor individual por meio da API TikTok Research. Embora existam endpoints para metadados do usuário, como biografia, contagem de seguidores e número total de vídeos postados, bem como para vídeos curtidos, vídeos fixados, seguidores, contas seguidas e conteúdo republicado, não há endpoints específicos para recuperar as postagens públicas de um usuário ou seus comentários. Soluções alternativas, como consultar vídeos por um nome de usuário específico, não parecem funcionar de maneira confiável.
 - code: UGC_OC5
   selected_answer: 'yes'
   notes: The [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) endpoint enables the retrieval of information about videos filtered by specific keywords.
-  notes_pt: The [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) endpoint enables the retrieval of information about videos filtered by specific keywords.
+  notes_pt: O endpoint [`/v2/research/video/query/`](https://open.tiktokapis.com/v2/research/video/query/) permite a recuperação de informações sobre vídeos filtrados por palavras-chave específicas.
 - code: UGC_OC6
   selected_answer: 'yes'
   notes: Based on a review of the [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) and our testing, the API uses a locale-neutral data representation. Time-related fields, such as the lower and upper bounds of video creation time, are provided in Coordinated Universal Time (UTC). Numeric values, including follower counts, are returned as integers; time durations are expressed in Unix epoch format in seconds; and region codes follow the ISO 3166-1 alpha-2 standard.
-  notes_pt: Based on a review of the [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) and our testing, the API uses a locale-neutral data representation. Time-related fields, such as the lower and upper bounds of video creation time, are provided in Coordinated Universal Time (UTC). Numeric values, including follower counts, are returned as integers; time durations are expressed in Unix epoch format in seconds; and region codes follow the ISO 3166-1 alpha-2 standard.
+  notes_pt: Com base em uma revisão da [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) e em nossos testes, a API usa uma representação de dados neutra em termos de localidade. Os campos relacionados ao tempo, como os limites inferior e superior do tempo de criação do vídeo, são fornecidos no Tempo Universal Coordenado (UTC). Valores numéricos, incluindo contagens de seguidores, são retornados como números inteiros; as durações de tempo são expressas no formato de época Unix em segundos; e os códigos de região seguem o padrão ISO 3166-1 alfa-2.
 compliance_answers:
 - code: UGC_OC7
   selected_answer: 'yes'
   notes: The TikTok Research API documentation includes a dedicated section on [migrating to the latest version of the API](https://developers.tiktok.com/doc/tiktok-api-v2-introduction), as well as a [changelog](https://developers.tiktok.com/doc/changelog) which includes changes to the API and [deprecation notices](https://developers.tiktok.com/bulletin/migration-guidance-oauth-v1) including a timeline and migration instructions.
-  notes_pt: The TikTok Research API documentation includes a dedicated section on [migrating to the latest version of the API](https://developers.tiktok.com/doc/tiktok-api-v2-introduction), as well as a [changelog](https://developers.tiktok.com/doc/changelog) which includes changes to the API and [deprecation notices](https://developers.tiktok.com/bulletin/migration-guidance-oauth-v1) including a timeline and migration instructions.
+  notes_pt: A documentação da API TikTok Research inclui uma seção dedicada sobre [migrating to the latest version of the API](https://developers.tiktok.com/doc/tiktok-api-v2-introduction), bem como um [changelog](https://developers.tiktok.com/doc/changelog) que inclui alterações na API e [deprecation notices](https://developers.tiktok.com/bulletin/migration-guidance-oauth-v1), incluindo um cronograma e instruções de migração.
 - code: UGC_OC8
   selected_answer: 'yes'
   notes: The entirety of the TikTok Research API documentation is publicly accessible to anyone at the [TikTok for Developers](https://developers.tiktok.com/doc/overview) website.
-  notes_pt: The entirety of the TikTok Research API documentation is publicly accessible to anyone at the [TikTok for Developers](https://developers.tiktok.com/doc/overview) website.
+  notes_pt: Toda a documentação da API TikTok Research está acessível publicamente a qualquer pessoa no site [TikTok for Developers](https://developers.tiktok.com/doc/overview).
 - code: UGC_OC9
   selected_answer: 'yes'
   notes: The TikTok Research API documentation is comprehensive and provides detailed explanations, endpoint descriptions, sample code and queries illustrating [correct usage](https://developers.tiktok.com/doc/research-api-specs-query-videos).
-  notes_pt: The TikTok Research API documentation is comprehensive and provides detailed explanations, endpoint descriptions, sample code and queries illustrating [correct usage](https://developers.tiktok.com/doc/research-api-specs-query-videos).
+  notes_pt: A documentação da API TikTok Research é abrangente e fornece explicações detalhadas, descrições de endpoints, exemplos de código e consultas que ilustram o [correct usage](https://developers.tiktok.com/doc/research-api-specs-query-videos).
 - code: UGC_OC10
   selected_answer: 'yes'
   notes: The TikTok Research API documentation links to the [Developer Guidelines](https://developers.tiktok.com/doc/our-guidelines-developer-guidelines), which include the Developer Terms of Service.
-  notes_pt: The TikTok Research API documentation links to the [Developer Guidelines](https://developers.tiktok.com/doc/our-guidelines-developer-guidelines), which include the Developer Terms of Service.
+  notes_pt: A documentação da API de pesquisa do TikTok está vinculada às [Developer Guidelines](https://developers.tiktok.com/doc/our-guidelines-developer-guidelines), que incluem os Termos de serviço para desenvolvedores.
 - code: UGC_OC11
   selected_answer: 'yes'
   notes: For each endpoint, the TikTok Research API documentation clearly describes the response format, specifying the structure of the returned JSON, the possible fields, their data types, and provides an [example](https://developers.tiktok.com/doc/research-api-specs-query-video-comments) at the bottom of the page.
-  notes_pt: For each endpoint, the TikTok Research API documentation clearly describes the response format, specifying the structure of the returned JSON, the possible fields, their data types, and provides an [example](https://developers.tiktok.com/doc/research-api-specs-query-video-comments) at the bottom of the page.
+  notes_pt: Para cada endpoint, a documentação da API TikTok Research descreve claramente o formato de resposta, especificando a estrutura do JSON retornado, os campos possíveis, seus tipos de dados e fornece um [example](https://developers.tiktok.com/doc/research-api-specs-query-video-comments) na parte inferior da página.
 - code: UGC_OC12
   selected_answer: 'yes'
   notes: The [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) is available in English.
-  notes_pt: The [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) is available in English.
+  notes_pt: A [TikTok Research API documentation](https://developers.tiktok.com/doc/research-api-specs-query-videos) está disponível em inglês.
 - code: UGC_OC13
   selected_answer: 'yes'
   notes: The TikTok Research API documentation specifies both [rate limits](https://developers.tiktok.com/doc/research-api-faq) and [daily quota limits](https://developers.tiktok.com/doc/tiktok-api-v2-rate-limit), detailing the number of requests allowed and the time window in which those limits apply.
-  notes_pt: The TikTok Research API documentation specifies both [rate limits](https://developers.tiktok.com/doc/research-api-faq) and [daily quota limits](https://developers.tiktok.com/doc/tiktok-api-v2-rate-limit), detailing the number of requests allowed and the time window in which those limits apply.
+  notes_pt: A documentação da API TikTok Research especifica [rate limits](https://developers.tiktok.com/doc/research-api-faq) e [daily quota limits](https://developers.tiktok.com/doc/tiktok-api-v2-rate-limit), detalhando o número de solicitações permitidas e o intervalo de tempo em que esses limites se aplicam.
 - code: UGC_OC14
   selected_answer: 'yes'
   notes: The TikTok Research API can return labels indicating whether content is [“AI-Generated” or “Creator Labelled as AI-Generated”](https://developers.tiktok.com/doc/research-api-specs-query-videos). The “AI-Generated” label refers to content that TikTok identifies as fully generated or significantly edited using AI, including cases where creators apply TikTok AI effects or upload AI-generated media with Content Credentials attached, a standard developed by the Coalition for Content Provenance and Authenticity (C2PA).
-  notes_pt: The TikTok Research API can return labels indicating whether content is [“AI-Generated” or “Creator Labelled as AI-Generated”](https://developers.tiktok.com/doc/research-api-specs-query-videos). The “AI-Generated” label refers to content that TikTok identifies as fully generated or significantly edited using AI, including cases where creators apply TikTok AI effects or upload AI-generated media with Content Credentials attached, a standard developed by the Coalition for Content Provenance and Authenticity (C2PA).
+  notes_pt: A API TikTok Research pode retornar rótulos indicando se o conteúdo é [“AI-Generated” or “Creator Labelled as AI-Generated”](https://developers.tiktok.com/doc/research-api-specs-query-videos). O rótulo “gerado por IA” refere-se ao conteúdo que o TikTok identifica como totalmente gerado ou significativamente editado usando IA, incluindo casos em que os criadores aplicam efeitos de IA do TikTok ou carregam mídia gerada por IA com credenciais de conteúdo anexadas, um padrão desenvolvido pela Coalition for Content Provenance and Authenticity (C2PA).
 completeness_answers:
 - code: UGC_OC15
   selected_answer: 'yes'
   notes: The TikTok Research API includes the endpoint [`/v2/research/video/comment/list/`](https://open.tiktokapis.com/v2/research/video/comment/list/) for querying video comments.
-  notes_pt: The TikTok Research API includes the endpoint [`/v2/research/video/comment/list/`](https://open.tiktokapis.com/v2/research/video/comment/list/) for querying video comments.
+  notes_pt: A API TikTok Research inclui o endpoint [`/v2/research/video/comment/list/`](https://open.tiktokapis.com/v2/research/video/comment/list/) para consultar comentários de vídeo.
 - code: UGC_OC16
   selected_answer: 'no'
   notes: Although temporary content exists on TikTok, such as Stories, the [Research API](https://developers.tiktok.com/doc/research-api-codebook) does not provide any endpoint or fields that allow this type of content to be extracted.
-  notes_pt: Although temporary content exists on TikTok, such as Stories, the [Research API](https://developers.tiktok.com/doc/research-api-codebook) does not provide any endpoint or fields that allow this type of content to be extracted.
+  notes_pt: Embora exista conteúdo temporário no TikTok, como Stories, a [Research API](https://developers.tiktok.com/doc/research-api-codebook) não fornece nenhum endpoint ou campo que permita a extração desse tipo de conteúdo.
 - code: UGC_OC17
   selected_answer: 'yes'
   notes: Historical data can be queried through the [TikTok Research API](https://developers.tiktok.com/doc/research-api-codebook) back to at least 2019. However, each query can cover a maximum time span of 30 days.
-  notes_pt: Historical data can be queried through the [TikTok Research API](https://developers.tiktok.com/doc/research-api-codebook) back to at least 2019. However, each query can cover a maximum time span of 30 days.
+  notes_pt: Os dados históricos podem ser consultados por meio da [TikTok Research API](https://developers.tiktok.com/doc/research-api-codebook) desde pelo menos 2019. No entanto, cada consulta pode cobrir um período máximo de 30 dias.
 - code: UGC_OC18
   selected_answer: 'yes'
   notes: Although we were not able to properly assess this item before our access to the TikTok Research API expired, the [API documentation](https://developers.tiktok.com/doc/research-api-faq) indicates that it is subject to a rate limit of 1,000 requests per day, corresponding to a maximum of 100,000 data records. This information has also been reported by [other researchers](https://ora.uniurb.it/handle/11576/2759111).
-  notes_pt: Although we were not able to properly assess this item before our access to the TikTok Research API expired, the [API documentation](https://developers.tiktok.com/doc/research-api-faq) indicates that it is subject to a rate limit of 1,000 requests per day, corresponding to a maximum of 100,000 data records. This information has also been reported by [other researchers](https://ora.uniurb.it/handle/11576/2759111).
+  notes_pt: Embora não tenhamos conseguido avaliar adequadamente este item antes de nosso acesso à API TikTok Research expirar, a [API documentation](https://developers.tiktok.com/doc/research-api-faq) indica que ele está sujeito a um limite de taxa de 1.000 solicitações por dia, correspondendo a um máximo de 100.000 registros de dados. Esta informação também foi relatada por [other researchers](https://ora.uniurb.it/handle/11576/2759111).
 consistency_answers:
 - code: UGC_OC19
   selected_answer: 'yes'
   notes: Our tests show that data extracted from the TikTok Research API is consistently reproducible over time.
-  notes_pt: Our tests show that data extracted from the TikTok Research API is consistently reproducible over time.
+  notes_pt: Nossos testes mostram que os dados extraídos da API TikTok Research são consistentemente reproduzíveis ao longo do tempo.
 - code: UGC_OC20
   selected_answer: 'yes'
   notes: The TikTok Research API returns data that corresponds to the parameters and filters applied in the query.
-  notes_pt: The TikTok Research API returns data that corresponds to the parameters and filters applied in the query.
+  notes_pt: A API TikTok Research retorna dados que correspondem aos parâmetros e filtros aplicados na consulta.
 relevance_answers:
 - code: UGC_OC21
   selected_answer: 'yes'
   notes: Data extracted through the TikTok Research API reflects what is displayed on the platform’s user interface at the time of collection, meaning that key elements such as authorship, full content, interaction metrics, and referenced content are consistent with what users see.
-  notes_pt: Data extracted through the TikTok Research API reflects what is displayed on the platform’s user interface at the time of collection, meaning that key elements such as authorship, full content, interaction metrics, and referenced content are consistent with what users see.
+  notes_pt: Os dados extraídos através da API TikTok Research refletem o que é exibido na interface do usuário da plataforma no momento da coleta, o que significa que elementos-chave como autoria, conteúdo completo, métricas de interação e conteúdo referenciado são consistentes com o que os usuários veem.
 - code: UGC_OC22
   selected_answer: 'yes'
   notes: The TikTok Research API allows data to be filtered by [publisher location](https://developers.tiktok.com/doc/research-api-specs-query-videos), which refers to the country where the creator registered their account rather than their location at the time of publication.
-  notes_pt: The TikTok Research API allows data to be filtered by [publisher location](https://developers.tiktok.com/doc/research-api-specs-query-videos), which refers to the country where the creator registered their account rather than their location at the time of publication.
+  notes_pt: A API TikTok Research permite que os dados sejam filtrados por [publisher location](https://developers.tiktok.com/doc/research-api-specs-query-videos), que se refere ao país onde o criador registrou sua conta, e não à sua localização no momento da publicação.
 - code: UGC_OC23
   selected_answer: 'no'
   notes: The TikTok Research API [does not support filtering data by content language](https://developers.tiktok.com/doc/research-api-specs-query-videos).
-  notes_pt: The TikTok Research API [does not support filtering data by content language](https://developers.tiktok.com/doc/research-api-specs-query-videos).
+  notes_pt: A API TikTok Research [does not support filtering data by content language](https://developers.tiktok.com/doc/research-api-specs-query-videos).
 - code: UGC_OC24
   selected_answer: 'yes'
   notes: The TikTok Research API supports filtering data by specific time periods. However, each request is limited to a [maximum span of 30 days](https://developers.tiktok.com/doc/research-api-specs-query-videos).
-  notes_pt: The TikTok Research API supports filtering data by specific time periods. However, each request is limited to a [maximum span of 30 days](https://developers.tiktok.com/doc/research-api-specs-query-videos).
+  notes_pt: A API TikTok Research oferece suporte à filtragem de dados por períodos de tempo específicos. No entanto, cada solicitação é limitada a [maximum span of 30 days](https://developers.tiktok.com/doc/research-api-specs-query-videos).
 timeliness_answers:
 - code: UGC_OC25
   selected_answer: 'no'
   notes: The TikTok Research API does not support collecting data from specific content within one hour of publication. Instead, the Video Query endpoint searches the full archived dataset rather than the current live platform. According to the [documentation](https://developers.tiktok.com/doc/research-api-faq), new videos may take up to 48 hours to be indexed, and metrics such as view counts and follower counts can take up to 10 days to update.
-  notes_pt: The TikTok Research API does not support collecting data from specific content within one hour of publication. Instead, the Video Query endpoint searches the full archived dataset rather than the current live platform. According to the [documentation](https://developers.tiktok.com/doc/research-api-faq), new videos may take up to 48 hours to be indexed, and metrics such as view counts and follower counts can take up to 10 days to update.
+  notes_pt: A API TikTok Research não oferece suporte à coleta de dados de conteúdo específico dentro de uma hora após a publicação. Em vez disso, o endpoint de consulta de vídeo pesquisa o conjunto de dados arquivado completo, em vez da plataforma ativa atual. De acordo com a [documentation](https://developers.tiktok.com/doc/research-api-faq), novos vídeos podem levar até 48 horas para serem indexados, e métricas como contagens de visualizações e seguidores podem levar até 10 dias para serem atualizadas.

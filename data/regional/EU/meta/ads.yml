@@ -7,150 +7,150 @@ special-criteria_answers:
 - code: AD_SC1
   selected_answer: full
   notes: The [Meta Ad Library API](https://www.facebook.com/ads/library/api/) allows the retrieval of data on “ads of any type” that were delivered over the past year to users in the European Union through Meta’s platforms, including Facebook, Instagram, Threads, WhatsApp, and Audience Network.
-  notes_pt: The [Meta Ad Library API](https://www.facebook.com/ads/library/api/) allows the retrieval of data on “ads of any type” that were delivered over the past year to users in the European Union through Meta’s platforms, including Facebook, Instagram, Threads, WhatsApp, and Audience Network.
+  notes_pt: O [Meta Ad Library API](https://www.facebook.com/ads/library/api/) permite a recuperação de dados sobre “anúncios de qualquer tipo” que foram entregues durante o ano passado a usuários na União Europeia através das plataformas Meta, incluindo Facebook, Instagram, Threads, WhatsApp e Audience Network.
 - code: AD_SC2
   selected_answer: 'no'
   notes: The [Meta Ad Library GUI](https://www.facebook.com/ads/library/) does not allow structured data extraction for ads served to users in the European Union, even though such ads may be visible to users while they are actively being delivered on the platform.
-  notes_pt: The [Meta Ad Library GUI](https://www.facebook.com/ads/library/) does not allow structured data extraction for ads served to users in the European Union, even though such ads may be visible to users while they are actively being delivered on the platform.
+  notes_pt: O [Meta Ad Library GUI](https://www.facebook.com/ads/library/) não permite a extração estruturada de dados para anúncios veiculados a usuários na União Europeia, mesmo que esses anúncios possam estar visíveis para os usuários enquanto estão sendo ativamente veiculados na plataforma.
 - code: AD_SC3
   selected_answer: full
   notes: The [Meta Ad Library API](https://www.facebook.com/ads/library/api/) enables the retrieval of both active and inactive ads that were served to users in the European Union over the past year.
-  notes_pt: The [Meta Ad Library API](https://www.facebook.com/ads/library/api/) enables the retrieval of both active and inactive ads that were served to users in the European Union over the past year.
+  notes_pt: O [Meta Ad Library API](https://www.facebook.com/ads/library/api/) permite a recuperação de anúncios ativos e inativos que foram veiculados a usuários na União Europeia durante o ano passado.
 accessibility_answers:
 - code: AD_OC1
   selected_answer: full
   notes: The [Meta Ad Library GUI](https://www.facebook.com/ads/library/) allows users to view data on all ads that were served to users in the European Union over the past year.
-  notes_pt: The [Meta Ad Library GUI](https://www.facebook.com/ads/library/) allows users to view data on all ads that were served to users in the European Union over the past year.
+  notes_pt: O [Meta Ad Library GUI](https://www.facebook.com/ads/library/) permite aos usuários visualizar dados sobre todos os anúncios que foram veiculados a usuários na União Europeia durante o ano passado.
 - code: AD_OC2
   selected_answer: both
   notes: Access to the Meta Ad Library, both through its API and GUI, is free of charge.
-  notes_pt: Access to the Meta Ad Library, both through its API and GUI, is free of charge.
+  notes_pt: O acesso à Meta Ad Library, tanto por meio de API quanto de GUI, é gratuito.
 - code: AD_OC3
   selected_answer: api
   notes: It is possible to extract structured data on both ad creatives and authorship through the [Meta Ad Library API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) in the European Union.
-  notes_pt: It is possible to extract structured data on both ad creatives and authorship through the [Meta Ad Library API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) in the European Union.
+  notes_pt: É possível extrair dados estruturados sobre criativos e autoria de anúncios por meio do [Meta Ad Library API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) na União Europeia.
 - code: AD_OC4
   selected_answer: 'yes'
   notes: The [Meta Ad Library API](https://developers.facebook.com/docs/facebook-login/guides/access-tokens#usertokens) provides a form of authentication that allows for renewal without the risk of data loss.
-  notes_pt: The [Meta Ad Library API](https://developers.facebook.com/docs/facebook-login/guides/access-tokens#usertokens) provides a form of authentication that allows for renewal without the risk of data loss.
+  notes_pt: O [Meta Ad Library API](https://developers.facebook.com/docs/facebook-login/guides/access-tokens#usertokens) fornece uma forma de autenticação que permite a renovação sem risco de perda de dados.
 - code: AD_OC5
   selected_answer: gui
   notes: The Meta Ad Library allows users to retrieve specific ads by their ID through the GUI, but this functionality is [not available through the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&q=1362986028521549&search_type=keyword_unordered).
-  notes_pt: The Meta Ad Library allows users to retrieve specific ads by their ID through the GUI, but this functionality is [not available through the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&q=1362986028521549&search_type=keyword_unordered).
+  notes_pt: A Meta Ad Library permite que os usuários recuperem anúncios específicos por seu ID por meio da GUI, mas essa funcionalidade é [not available through the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&q=1362986028521549&search_type=keyword_unordered).
 - code: AD_OC6
   selected_answer: both
   notes: The Meta Ad Library enables the retrieval of specific advertisers by their unique ID through [both the GUI and the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=651655564979252).
-  notes_pt: The Meta Ad Library enables the retrieval of specific advertisers by their unique ID through [both the GUI and the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=651655564979252).
+  notes_pt: A Meta Ad Library permite a recuperação de anunciantes específicos por meio de seu ID exclusivo por meio de [both the GUI and the API](/?active_status=active&ad_type=political_and_issue_ads&country=BR&is_targeted_country=false&media_type=all&search_type=page&view_all_page_id=651655564979252).
 - code: AD_OC7
   selected_answer: both
   notes: It is possible to use keywords to perform searches through both the [Meta Ad Library GUI and API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
-  notes_pt: It is possible to use keywords to perform searches through both the [Meta Ad Library GUI and API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
+  notes_pt: É possível utilizar palavras-chave para realizar pesquisas tanto no [Meta Ad Library GUI and API](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
 - code: AD_OC8
   selected_answer: both
   notes: Timestamps are returned in Coordinated Universal Time (UTC) using the ISO 8601 standard. They are not automatically localized, and no locale information (such as language or region) is attached unless explicitly requested or inferred.
-  notes_pt: Timestamps are returned in Coordinated Universal Time (UTC) using the ISO 8601 standard. They are not automatically localized, and no locale information (such as language or region) is attached unless explicitly requested or inferred.
+  notes_pt: Os carimbos de data e hora são retornados em Tempo Universal Coordenado (UTC) usando o padrão ISO 8601. Eles não são localizados automaticamente e nenhuma informação de localidade (como idioma ou região) é anexada, a menos que seja explicitamente solicitada ou inferida.
 completeness_answers:
 - code: AD_OC9
   selected_answer: both
   notes: The Meta Ad Library consistently provides a unique identifier for all advertisers. However, when an advertiser does not have a Facebook page, the tool populates the page name field with the advertiser’s Instagram user ID and assigns the value “0” to the page ID field.
-  notes_pt: The Meta Ad Library consistently provides a unique identifier for all advertisers. However, when an advertiser does not have a Facebook page, the tool populates the page name field with the advertiser’s Instagram user ID and assigns the value “0” to the page ID field.
+  notes_pt: A Meta Ad Library fornece consistentemente um identificador exclusivo para todos os anunciantes. No entanto, quando um anunciante não possui uma página no Facebook, a ferramenta preenche o campo de nome da página com o ID de usuário do Instagram do anunciante e atribui o valor “0” ao campo de ID da página.
 - code: AD_OC10
   selected_answer: both
   notes: The Meta Ad Library consistently discloses each ad’s [beneficiary and payer](https://www.facebook.com/ads/library/api) through both its GUI and API.
-  notes_pt: The Meta Ad Library consistently discloses each ad’s [beneficiary and payer](https://www.facebook.com/ads/library/api) through both its GUI and API.
+  notes_pt: A Meta Ad Library divulga consistentemente o [beneficiary and payer](https://www.facebook.com/ads/library/api) de cada anúncio por meio de sua GUI e API.
 - code: AD_OC11
   selected_answer: both
   notes: The Meta Ad Library provides the period during which all ads were served to users in the European Union.
-  notes_pt: The Meta Ad Library provides the period during which all ads were served to users in the European Union.
+  notes_pt: A Meta Ad Library fornece o período durante o qual todos os anúncios foram veiculados aos usuários na União Europeia.
 - code: AD_OC12
   selected_answer: 'no'
   notes: The Meta Ad Library does not provide any data on user engagement with ads.
-  notes_pt: The Meta Ad Library does not provide any data on user engagement with ads.
+  notes_pt: A Meta Ad Library não fornece quaisquer dados sobre o envolvimento do usuário com os anúncios.
 - code: AD_OC13
   selected_answer: gui
   notes: The Meta Ad Library API [response schema](https://developers.facebook.com/docs/graph-api/reference/archived-ad/) does not indicate whether an advertiser has been verified by Meta, unlike the GUI, which explicitly displays this information.
-  notes_pt: The Meta Ad Library API [response schema](https://developers.facebook.com/docs/graph-api/reference/archived-ad/) does not indicate whether an advertiser has been verified by Meta, unlike the GUI, which explicitly displays this information.
+  notes_pt: A API Meta Ad Library [response schema](https://developers.facebook.com/docs/graph-api/reference/archived-ad/) não indica se um anunciante foi verificado pelo Meta, ao contrário da GUI, que exibe explicitamente essas informações.
 compliance_answers:
 - code: AD_OC14
   selected_answer: both
   notes: Through the API, the Meta Ad Library indicates when an ad has been removed—provided that the appropriate parameters are set—while disclosing both the reason for removal and the ad’s final date of airing. The GUI likewise presents the reasons for an ad’s removal and its final airing date, and additionally allows users to view the ad content itself when it was removed for violating the company’s [Advertising Standards](https://transparency.meta.com/policies/ad-standards/).
-  notes_pt: Through the API, the Meta Ad Library indicates when an ad has been removed—provided that the appropriate parameters are set—while disclosing both the reason for removal and the ad’s final date of airing. The GUI likewise presents the reasons for an ad’s removal and its final airing date, and additionally allows users to view the ad content itself when it was removed for violating the company’s [Advertising Standards](https://transparency.meta.com/policies/ad-standards/).
+  notes_pt: Por meio da API, a Meta Ad Library indica quando um anúncio foi removido – desde que os parâmetros apropriados sejam definidos – ao mesmo tempo que divulga o motivo da remoção e a data final de exibição do anúncio. A GUI também apresenta os motivos para a remoção de um anúncio e sua data final de exibição e, além disso, permite que os usuários visualizem o próprio conteúdo do anúncio quando ele foi removido por violar o [Advertising Standards](https://transparency.meta.com/policies/ad-standards/) da empresa.
 - code: AD_OC15
   selected_answer: 'no'
   notes: While this information is available for ads labeled as political or issue ads outside the European Union in the Meta Ad Library GUI, it is not provided for any ads served to users within the EU. This is due to Meta’s policy of [not officially allowing such content to be served in the bloc](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/).
-  notes_pt: While this information is available for ads labeled as political or issue ads outside the European Union in the Meta Ad Library GUI, it is not provided for any ads served to users within the EU. This is due to Meta’s policy of [not officially allowing such content to be served in the bloc](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/).
+  notes_pt: Embora essas informações estejam disponíveis para anúncios rotulados como anúncios políticos ou temáticos fora da União Europeia na GUI da Meta Ad Library, elas não são fornecidas para nenhum anúncio veiculado a usuários dentro da UE. Isto se deve à política de [not officially allowing such content to be served in the bloc](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/) da Meta.
 - code: AD_OC16
   selected_answer: both
   notes: Any user can access [Meta Ad Library’s documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
-  notes_pt: Any user can access [Meta Ad Library’s documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
+  notes_pt: Qualquer usuário pode acessar [Meta Ad Library’s documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive).
 - code: AD_OC17
   selected_answer: both
   notes: The [Meta Ad Library documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) is clear and well documented with illustrative examples.
-  notes_pt: The [Meta Ad Library documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) is clear and well documented with illustrative examples.
+  notes_pt: O [Meta Ad Library documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) é claro e bem documentado com exemplos ilustrativos.
 - code: AD_OC18
   selected_answer: 'no'
   notes: We did not identify any specific terms of service governing the use of the Meta Ad Library API or GUI.
-  notes_pt: We did not identify any specific terms of service governing the use of the Meta Ad Library API or GUI.
+  notes_pt: Não identificamos nenhum termo de serviço específico que rege o uso da API ou GUI da Meta Ad Library.
 - code: AD_OC19
   selected_answer: gui
   notes: The [API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) is available only in English, with just a few headings translated into the selected language, while the body text and descriptions remain in English. By contrast, the GUI documentation is fully available in the user’s chosen language when they are logged in.
-  notes_pt: The [API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) is available only in English, with just a few headings translated into the selected language, while the body text and descriptions remain in English. By contrast, the GUI documentation is fully available in the user’s chosen language when they are logged in.
+  notes_pt: O [API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) está disponível apenas em inglês, com apenas alguns títulos traduzidos para o idioma selecionado, enquanto o corpo do texto e as descrições permanecem em inglês. Por outro lado, a documentação da GUI está totalmente disponível no idioma escolhido pelo usuário quando ele está logado.
 - code: AD_OC20
   selected_answer: 'yes'
   notes: The Meta Ad Library provides a [changelog](https://developers.facebook.com/docs/graph-api/changelog) for its API detailing deprecation strategies and listing all upcoming changes, along with their respective release and expiration dates.
-  notes_pt: The Meta Ad Library provides a [changelog](https://developers.facebook.com/docs/graph-api/changelog) for its API detailing deprecation strategies and listing all upcoming changes, along with their respective release and expiration dates.
+  notes_pt: A Meta Ad Library fornece um [changelog](https://developers.facebook.com/docs/graph-api/changelog) para sua API detalhando estratégias de descontinuação e listando todas as alterações futuras, juntamente com suas respectivas datas de lançamento e expiração.
 - code: AD_OC21
   selected_answer: 'yes'
   notes: The [Meta Ad Library API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) provides a description of the response returned by the available endpoint.
-  notes_pt: The [Meta Ad Library API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) provides a description of the response returned by the available endpoint.
+  notes_pt: O [Meta Ad Library API documentation](https://developers.facebook.com/docs/graph-api/reference/v23.0/ads_archive) fornece uma descrição da resposta retornada pelo terminal disponível.
 - code: AD_OC22
   selected_answer: 'no'
   notes: Although Meta provides [rate-limiting documentation](https://developers.facebook.com/docs/graph-api/overview/rate-limiting/), it is not specific to the Ad Library API, which makes it difficult to estimate the effective quota available for collecting advertising data.
-  notes_pt: Although Meta provides [rate-limiting documentation](https://developers.facebook.com/docs/graph-api/overview/rate-limiting/), it is not specific to the Ad Library API, which makes it difficult to estimate the effective quota available for collecting advertising data.
+  notes_pt: Embora o Meta forneça [rate-limiting documentation](https://developers.facebook.com/docs/graph-api/overview/rate-limiting/), ele não é específico da API Ad Library, o que torna difícil estimar a cota efetiva disponível para coleta de dados publicitários.
 consistency_answers:
 - code: AD_OC23
   selected_answer: 'yes'
   notes: With the exception of ad media—such as images and videos—the content displayed in the Meta Ad Library GUI for ads served in the European Union corresponds to what is returned in structured form by its API.
-  notes_pt: With the exception of ad media—such as images and videos—the content displayed in the Meta Ad Library GUI for ads served in the European Union corresponds to what is returned in structured form by its API.
+  notes_pt: Com exceção da mídia publicitária – como imagens e vídeos – o conteúdo exibido na GUI da Meta Ad Library para anúncios veiculados na União Europeia corresponde ao que é retornado de forma estruturada por sua API.
 - code: AD_OC24
   selected_answer: both
   notes: We conducted a test using the Meta Ad Library API by issuing five identical requests with the same parameters, saving each response to a separate file, and comparing whether all ads appeared consistently across the files. We observed that the full set of ads was present in every response. The GUI was likewise found to return consistent results across repeated queries.
-  notes_pt: We conducted a test using the Meta Ad Library API by issuing five identical requests with the same parameters, saving each response to a separate file, and comparing whether all ads appeared consistently across the files. We observed that the full set of ads was present in every response. The GUI was likewise found to return consistent results across repeated queries.
+  notes_pt: Conduzimos um teste usando a API Meta Ad Library emitindo cinco solicitações idênticas com os mesmos parâmetros, salvando cada resposta em um arquivo separado e comparando se todos os anúncios apareceram de forma consistente nos arquivos. Observamos que o conjunto completo de anúncios estava presente em todas as respostas. Da mesma forma, descobriu-se que a GUI retorna resultados consistentes em consultas repetidas.
 - code: AD_OC25
   selected_answer: both
   notes: We conducted a test using the Meta Ad Library API with five requests, each employing different parameters, and compared the results against the specified filters. All responses were successfully validated. For the GUI, all displayed ads matched the applied filters, although we observed that using quotation marks in search terms allowed the export of more data than was indicated in the interface.
-  notes_pt: We conducted a test using the Meta Ad Library API with five requests, each employing different parameters, and compared the results against the specified filters. All responses were successfully validated. For the GUI, all displayed ads matched the applied filters, although we observed that using quotation marks in search terms allowed the export of more data than was indicated in the interface.
+  notes_pt: Conduzimos um teste usando a API Meta Ad Library com cinco solicitações, cada uma empregando parâmetros diferentes, e comparamos os resultados com os filtros especificados. Todas as respostas foram validadas com sucesso. Para a GUI, todos os anúncios exibidos corresponderam aos filtros aplicados, embora tenhamos observado que o uso de aspas nos termos de busca permitiu a exportação de mais dados do que o indicado na interface.
 relevance_answers:
 - code: AD_OC26
   selected_answer: both
   notes: The Meta Ad Library allows the application of a time period filter.
-  notes_pt: The Meta Ad Library allows the application of a time period filter.
+  notes_pt: A Meta Ad Library permite a aplicação de um filtro de período de tempo.
 - code: AD_OC27
   selected_answer: both
   notes: For ads served to users in the European Union, the Meta Ad Library GUI and API allow filtering data by the categories “Housing”, “Employment”, and “Financial Services”.
-  notes_pt: For ads served to users in the European Union, the Meta Ad Library GUI and API allow filtering data by the categories “Housing”, “Employment”, and “Financial Services”.
+  notes_pt: Para anúncios veiculados a usuários na União Europeia, a GUI e API da Meta Ad Library permitem filtrar dados pelas categorias “Habitação”, “Emprego” e “Serviços Financeiros”.
 - code: AD_OC28
   selected_answer: 'no'
   notes: The Meta Ad Library API allows geographic segmentation below the country level only for ads labeled as political or issue ads, which are [no longer officially permitted in the European Union](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/).
-  notes_pt: The Meta Ad Library API allows geographic segmentation below the country level only for ads labeled as political or issue ads, which are [no longer officially permitted in the European Union](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/).
+  notes_pt: A API Meta Ad Library permite a segmentação geográfica abaixo do nível do país apenas para anúncios rotulados como anúncios políticos ou temáticos, que são [no longer officially permitted in the European Union](https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/).
 accuracy_answers:
 - code: AD_OC29
   selected_answer: both
   notes: The Meta Ad Library provides age and gender data for the audience reached by ads in the European Union.
-  notes_pt: The Meta Ad Library provides age and gender data for the audience reached by ads in the European Union.
+  notes_pt: A Meta Ad Library fornece dados de idade e sexo para o público alcançado pelos anúncios na União Europeia.
 - code: AD_OC30
   selected_answer: 'no'
   notes: The Meta Ad Library currently does not provide subnational geographic data on the audience reached by ads in the European Union.
-  notes_pt: The Meta Ad Library currently does not provide subnational geographic data on the audience reached by ads in the European Union.
+  notes_pt: A Meta Ad Library atualmente não fornece dados geográficos subnacionais sobre o público-alvo alcançado pelos anúncios na União Europeia.
 - code: AD_OC31
   selected_answer: 'no'
   notes: The Meta Ad Library does not provide data for all targeting criteria that an advertiser can select in the European Union.
-  notes_pt: The Meta Ad Library does not provide data for all targeting criteria that an advertiser can select in the European Union.
+  notes_pt: A Meta Ad Library não fornece dados para todos os critérios de segmentação que um anunciante pode selecionar na União Europeia.
 - code: AD_OC32
   selected_answer: both
   notes: The Meta Ad Library provides data on the total number of users reached by each ad in the European Union.
-  notes_pt: The Meta Ad Library provides data on the total number of users reached by each ad in the European Union.
+  notes_pt: A Meta Ad Library fornece dados sobre o número total de usuários alcançados por cada anúncio na União Europeia.
 - code: AD_OC33
   selected_answer: 'no'
   notes: The Meta Ad Library does not provide data on [ad spending](https://www.facebook.com/ads/library/api/) in the European Union.
-  notes_pt: The Meta Ad Library does not provide data on [ad spending](https://www.facebook.com/ads/library/api/) in the European Union.
+  notes_pt: A Meta Ad Library não fornece dados sobre [ad spending](https://www.facebook.com/ads/library/api/) na União Europeia.

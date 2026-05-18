@@ -7,150 +7,150 @@ special-criteria_answers:
 - code: AD_SC1
   selected_answer: full
   notes: Data from all types of ads can be retrieved through the [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) and remains available for collection for up to one year after the ad’s last impression.
-  notes_pt: Data from all types of ads can be retrieved through the [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) and remains available for collection for up to one year after the ad’s last impression.
+  notes_pt: Os dados de todos os tipos de anúncios podem ser recuperados por meio do [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) e permanecem disponíveis para coleta por até um ano após a última impressão do anúncio.
 - code: AD_SC2
   selected_answer: 'no'
   notes: Although the [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) allows users to view ads served on the platform for up to one year after their last impression, it does not provide any means to export structured data.
-  notes_pt: Although the [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) allows users to view ads served on the platform for up to one year after their last impression, it does not provide any means to export structured data.
+  notes_pt: Embora o [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) permita aos usuários visualizar anúncios veiculados na plataforma por até um ano após a última impressão, ele não fornece nenhum meio de exportar dados estruturados.
 - code: AD_SC3
   selected_answer: 'full'
   notes: Both the LinkedIn Ad Library GUI and API allow users to see the most recent date an ad was served, enabling verification that data can be retrieved for both active and inactive ads.
-  notes_pt: Both the LinkedIn Ad Library GUI and API allow users to see the most recent date an ad was served, enabling verification that data can be retrieved for both active and inactive ads.
+  notes_pt: Tanto a GUI quanto a API da Biblioteca de anúncios do LinkedIn permitem que os usuários vejam a data mais recente em que um anúncio foi veiculado, permitindo a verificação de que os dados podem ser recuperados para anúncios ativos e inativos.
 accessibility_answers:
 - code: AD_OC1
   selected_answer: full
   notes: The [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) allows users to query and filter ads served to LinkedIn users for up to one year after their last impression.
-  notes_pt: The [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) allows users to query and filter ads served to LinkedIn users for up to one year after their last impression.
+  notes_pt: O [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) permite aos usuários consultar e filtrar anúncios veiculados aos usuários do LinkedIn por até um ano após sua última impressão.
 - code: AD_OC2
   selected_answer: both
   notes: Access to the LinkedIn Ad Library, via both the API and the GUI, is free of charge.
-  notes_pt: Access to the LinkedIn Ad Library, via both the API and the GUI, is free of charge.
+  notes_pt: O acesso à Biblioteca de anúncios do LinkedIn, tanto por meio da API quanto da GUI, é gratuito.
 - code: AD_OC3
   selected_answer: 'no'
   notes: The [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) returns only the ad URL, the period during which it ran and information about the advertiser—including their name, page URL, publication date and funder—but does not provide the ad creative itself.
-  notes_pt: The [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) returns only the ad URL, the period during which it ran and information about the advertiser—including their name, page URL, publication date and funder—but does not provide the ad creative itself.
+  notes_pt: O [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) retorna apenas o URL do anúncio, o período durante o qual ele foi veiculado e informações sobre o anunciante (incluindo nome, URL da página, data de publicação e financiador), mas não fornece o criativo do anúncio em si.
 - code: AD_OC4
   selected_answer: 'yes'
   notes: The [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) provides a form of authentication thatallows for renewal without the risk of data loss.
-  notes_pt: The [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) provides a form of authentication thatallows for renewal without the risk of data loss.
+  notes_pt: O [LinkedIn Ad Library API](https://www.linkedin.com/ad-library/api) fornece uma forma de autenticação que permite a renovação sem risco de perda de dados.
 - code: AD_OC5
   selected_answer: gui
   notes: Through the [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/), it is possible to access the page of a specific ad. By contrast, the API does not allow ads to be retrieved by their ID.
-  notes_pt: Through the [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/), it is possible to access the page of a specific ad. By contrast, the API does not allow ads to be retrieved by their ID.
+  notes_pt: Através do [LinkedIn Ad Library GUI](https://www.linkedin.com/ad-library/) é possível acessar a página de um determinado anúncio. Por outro lado, a API não permite que os anúncios sejam recuperados pelo seu ID.
 - code: AD_OC6
   selected_answer: 'no'
   notes: On both LinkedIn Ad Library [GUI](https://www.linkedin.com/ad-library/) and [API](https://www.linkedin.com/ad-library/api), the advertiser search function retrieves only records containing the queried keyword, rather than allowing direct filtering by a specific advertiser via their username or unique identifier.
-  notes_pt: On both LinkedIn Ad Library [GUI](https://www.linkedin.com/ad-library/) and [API](https://www.linkedin.com/ad-library/api), the advertiser search function retrieves only records containing the queried keyword, rather than allowing direct filtering by a specific advertiser via their username or unique identifier.
+  notes_pt: Tanto na biblioteca de anúncios do LinkedIn [GUI](https://www.linkedin.com/ad-library/) quanto na [API](https://www.linkedin.com/ad-library/api), a função de pesquisa de anunciante recupera apenas registros contendo a palavra-chave consultada, em vez de permitir a filtragem direta por um anunciante específico por meio de seu nome de usuário ou identificador exclusivo.
 - code: AD_OC7
   selected_answer: both
   notes: It is possible to use keywords to perform searches both through the LinkedIn Ad Library [GUI](https://www.linkedin.com/ad-library/) and [API](https://www.linkedin.com/ad-library/api).
-  notes_pt: It is possible to use keywords to perform searches both through the LinkedIn Ad Library [GUI](https://www.linkedin.com/ad-library/) and [API](https://www.linkedin.com/ad-library/api).
+  notes_pt: É possível utilizar palavras-chave para realizar pesquisas tanto na LinkedIn Ad Library [GUI](https://www.linkedin.com/ad-library/) quanto na [API](https://www.linkedin.com/ad-library/api).
 - code: AD_OC8
   selected_answer: api
   notes: Timestamps retrieved through the LinkedIn Ad Library API follow the Unix format (e.g., 1763337597116). By contrast, the LinkedIn Ad Library GUI returns abbreviated and extended date strings (e.g., “Jan 13, 2026 to Jan 15, 2026”), which hinders both readability and automated processing.
-  notes_pt: Timestamps retrieved through the LinkedIn Ad Library API follow the Unix format (e.g., 1763337597116). By contrast, the LinkedIn Ad Library GUI returns abbreviated and extended date strings (e.g., “Jan 13, 2026 to Jan 15, 2026”), which hinders both readability and automated processing.
+  notes_pt: Os carimbos de data e hora recuperados por meio da API da LinkedIn Ad Library seguem o formato Unix (por exemplo, 1763337597116). Por outro lado, a GUI da LinkedIn Ad Library retorna strings de datas abreviadas e estendidas (por exemplo, “13 de janeiro de 2026 a 15 de janeiro de 2026”), o que dificulta a legibilidade e o processamento automatizado.
 completeness_answers:
 - code: AD_OC9
   selected_answer: both
   notes: The LinkedIn Ad Library provides URLs for the pages and profiles of the entities that ran the ads.
-  notes_pt: The LinkedIn Ad Library provides URLs for the pages and profiles of the entities that ran the ads.
+  notes_pt: A LinkedIn Ad Library fornece URLs para as páginas e perfis das entidades que veicularam os anúncios.
 - code: AD_OC10
   selected_answer: both
   notes: The LinkedIn Ad Library provides the registered names of the ads’ funders.
-  notes_pt: The LinkedIn Ad Library provides the registered names of the ads’ funders.
+  notes_pt: A LinkedIn Ad Library fornece os nomes registrados dos financiadores dos anúncios.
 - code: AD_OC11
   selected_answer: both
   notes: For ads served to users in the European Union, the LinkedIn Ad Library provides the time period during which they ran, both through the API and the GUI.
-  notes_pt: For ads served to users in the European Union, the LinkedIn Ad Library provides the time period during which they ran, both through the API and the GUI.
+  notes_pt: Para anúncios veiculados a usuários na União Europeia, a Biblioteca de anúncios do LinkedIn fornece o período durante o qual eles foram veiculados, tanto por meio da API quanto da GUI.
 - code: AD_OC12
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any data on user engagement with ads.
-  notes_pt: The LinkedIn Ad Library does not provide any data on user engagement with ads.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não fornece dados sobre o envolvimento do usuário com os anúncios.
 - code: AD_OC13
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any data on advertisers’ verification status.
-  notes_pt: The LinkedIn Ad Library does not provide any data on advertisers’ verification status.
+  notes_pt: A LinkedIn Ad Library não fornece quaisquer dados sobre o status de verificação dos anunciantes.
 compliance_answers:
 - code: AD_OC14
   selected_answer: both
   notes: Although restricted and moderated ads are difficult to search for and locate, they remain accessible through both the [LinkedIn Ad Library API and GUI](https://www.linkedin.com/ad-library/api/ads). In these cases, the interface specifies when the ads were last shown to users and includes a message explaining the reason for moderation. However, the ad content itself is not available for viewing.
-  notes_pt: Although restricted and moderated ads are difficult to search for and locate, they remain accessible through both the [LinkedIn Ad Library API and GUI](https://www.linkedin.com/ad-library/api/ads). In these cases, the interface specifies when the ads were last shown to users and includes a message explaining the reason for moderation. However, the ad content itself is not available for viewing.
+  notes_pt: Embora anúncios restritos e moderados sejam difíceis de pesquisar e localizar, eles permanecem acessíveis por meio do [LinkedIn Ad Library API and GUI](https://www.linkedin.com/ad-library/api/ads). Nestes casos, a interface especifica quando os anúncios foram exibidos pela última vez aos usuários e inclui uma mensagem explicando o motivo da moderação. No entanto, o conteúdo do anúncio em si não está disponível para visualização.
 - code: AD_OC15
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any information regarding the use of generative AI in the creation or manipulation of ad content.
-  notes_pt: The LinkedIn Ad Library does not provide any information regarding the use of generative AI in the creation or manipulation of ad content.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não fornece nenhuma informação sobre o uso de IA generativa na criação ou manipulação de conteúdo publicitário.
 - code: AD_OC16
   selected_answer: both
   notes: Any user can access [LinkedIn Ad Library’s documentation](https://www.linkedin.com/help/linkedin/answer/a1517918). Some public documentation for the GUI is available in the form of an [FAQ](https://www.linkedin.com/ad-library).
-  notes_pt: Any user can access [LinkedIn Ad Library’s documentation](https://www.linkedin.com/help/linkedin/answer/a1517918). Some public documentation for the GUI is available in the form of an [FAQ](https://www.linkedin.com/ad-library).
+  notes_pt: Qualquer usuário pode acessar [LinkedIn Ad Library’s documentation](https://www.linkedin.com/help/linkedin/answer/a1517918). Alguma documentação pública para a GUI está disponível na forma de [FAQ](https://www.linkedin.com/ad-library).
 - code: AD_OC17
   selected_answer: both
   notes: From the perspective of a European user, the [LinkedIn Ad Library API documentation](https://www.linkedin.com/ad-library/api/ads) is comparatively more informative, as it includes a concrete response example for ads served in European Union countries. While limited in scope, this example offers clearer guidance on the structure and fields of the API’s output for EU-based transparency data.
-  notes_pt: From the perspective of a European user, the [LinkedIn Ad Library API documentation](https://www.linkedin.com/ad-library/api/ads) is comparatively more informative, as it includes a concrete response example for ads served in European Union countries. While limited in scope, this example offers clearer guidance on the structure and fields of the API’s output for EU-based transparency data.
+  notes_pt: Do ponto de vista de um utilizador europeu, o [LinkedIn Ad Library API documentation](https://www.linkedin.com/ad-library/api/ads) é comparativamente mais informativo, pois inclui um exemplo concreto de resposta para anúncios publicados em países da União Europeia. Embora de âmbito limitado, este exemplo oferece orientações mais claras sobre a estrutura e os campos dos resultados da API para dados de transparência baseados na UE.
 - code: AD_OC18
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not reference any specific terms of use for either its API or its GUI.
-  notes_pt: The LinkedIn Ad Library does not reference any specific terms of use for either its API or its GUI.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não faz referência a nenhum termo de uso específico para sua API ou GUI.
 - code: AD_OC19
   selected_answer: both
   notes: The LinkedIn Ad Library’s documentation is displayed in the [language defined by the user](https://www.linkedin.com/help/linkedin/answer/a522175).
-  notes_pt: The LinkedIn Ad Library’s documentation is displayed in the [language defined by the user](https://www.linkedin.com/help/linkedin/answer/a522175).
+  notes_pt: A documentação da LinkedIn Ad Library é exibida em [language defined by the user](https://www.linkedin.com/help/linkedin/answer/a522175).
 - code: AD_OC20
   selected_answer: 'no'
   notes: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) does not describe any deprecation strategy intended to prevent breaking changes in client applications.
-  notes_pt: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) does not describe any deprecation strategy intended to prevent breaking changes in client applications.
+  notes_pt: O [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) não descreve nenhuma estratégia de descontinuação destinada a evitar alterações significativas em aplicativos clientes.
 - code: AD_OC21
   selected_answer: 'yes'
   notes: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) details the response format of its sole available endpoint.
-  notes_pt: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) details the response format of its sole available endpoint.
+  notes_pt: O [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) detalha o formato de resposta de seu único endpoint disponível.
 - code: AD_OC22
   selected_answer: 'no'
   notes: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) does not specify any usage quotas or rate limits.
-  notes_pt: The [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) does not specify any usage quotas or rate limits.
+  notes_pt: O [LinkedIn Ad Library API’s documentation](https://www.linkedin.com/ad-library/api/ads) não especifica nenhuma cota de uso ou limite de taxa.
 consistency_answers:
 - code: AD_OC23
   selected_answer: 'no'
   notes: Although the data retrieved via the LinkedIn Ad Library API broadly corresponds to what is displayed in the GUI, the platform does not provide sufficient information or mechanisms to enable a proper comparison between the two. The GUI search interface presents a preview of each ad’s media and text, whereas the API returns no information about ad content, providing only the ad’s URL, advertiser metadata, and the period during which the ad ran
-  notes_pt: Although the data retrieved via the LinkedIn Ad Library API broadly corresponds to what is displayed in the GUI, the platform does not provide sufficient information or mechanisms to enable a proper comparison between the two. The GUI search interface presents a preview of each ad’s media and text, whereas the API returns no information about ad content, providing only the ad’s URL, advertiser metadata, and the period during which the ad ran
+  notes_pt: Embora os dados recuperados através da API da LinkedIn Ad Library correspondam amplamente ao que é exibido na GUI, a plataforma não fornece informações ou mecanismos suficientes para permitir uma comparação adequada entre os dois. A interface de pesquisa GUI apresenta uma visualização da mídia e do texto de cada anúncio, enquanto a API não retorna nenhuma informação sobre o conteúdo do anúncio, fornecendo apenas o URL do anúncio, os metadados do anunciante e o período durante o qual o anúncio foi veiculado.
 - code: AD_OC24
   selected_answer: both
   notes: We conducted a test using the LinkedIn Ad Library API by issuing five identical requests with the same parameters, saving each response to a separate file, and comparing whether all ads appeared consistently across the files. We observed that the full set of ads was present in every response. The GUI was likewise found to return consistent results across repeated queries.
-  notes_pt: We conducted a test using the LinkedIn Ad Library API by issuing five identical requests with the same parameters, saving each response to a separate file, and comparing whether all ads appeared consistently across the files. We observed that the full set of ads was present in every response. The GUI was likewise found to return consistent results across repeated queries.
+  notes_pt: Realizamos um teste usando a API da LinkedIn Ad Library emitindo cinco solicitações idênticas com os mesmos parâmetros, salvando cada resposta em um arquivo separado e comparando se todos os anúncios apareceram de forma consistente nos arquivos. Observamos que o conjunto completo de anúncios estava presente em todas as respostas. Da mesma forma, descobriu-se que a GUI retorna resultados consistentes em consultas repetidas.
 - code: AD_OC25
   selected_answer: gui
   notes: Because the LinkedIn Ad Library API does not return any information about ad creatives, it is not possible to verify whether the ads actually correspond to the queried keywords. This verification is, however, possible through the LinkedIn Ad Library GUI, where users can directly assess whether the returned ads match both the queried keywords and the specified time period.
-  notes_pt: Because the LinkedIn Ad Library API does not return any information about ad creatives, it is not possible to verify whether the ads actually correspond to the queried keywords. This verification is, however, possible through the LinkedIn Ad Library GUI, where users can directly assess whether the returned ads match both the queried keywords and the specified time period.
+  notes_pt: Como a API da LinkedIn Ad Library não retorna nenhuma informação sobre criativos de anúncios, não é possível verificar se os anúncios realmente correspondem às palavras-chave consultadas. Esta verificação é, no entanto, possível através da GUI da LinkedIn Ad Library, onde os usuários podem avaliar diretamente se os anúncios retornados correspondem às palavras-chave consultadas e ao período de tempo especificado.
 relevance_answers:
 - code: AD_OC26
   selected_answer: both
   notes: The LinkedIn Ad Library supports the application of a time period filter through both its API and GUI.
-  notes_pt: The LinkedIn Ad Library supports the application of a time period filter through both its API and GUI.
+  notes_pt: A LinkedIn Ad Library oferece suporte à aplicação de um filtro de período de tempo por meio de API e GUI.
 - code: AD_OC27
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not allow data to be filtered by ad category.
-  notes_pt: The LinkedIn Ad Library does not allow data to be filtered by ad category.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não permite que os dados sejam filtrados por categoria de anúncio.
 - code: AD_OC28
   selected_answer: 'no'
   notes: The LinkedIn Ad Library only allows data to be filtered by country.
-  notes_pt: The LinkedIn Ad Library only allows data to be filtered by country.
+  notes_pt: A LinkedIn Ad Library só permite que os dados sejam filtrados por país.
 accuracy_answers:
 - code: AD_OC29
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any age or gender information about an ad’s audience.
-  notes_pt: The LinkedIn Ad Library does not provide any age or gender information about an ad’s audience.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não fornece informações de idade ou sexo sobre o público de um anúncio.
 - code: AD_OC30
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any subnational location data about an ad’s audience.
-  notes_pt: The LinkedIn Ad Library does not provide any subnational location data about an ad’s audience.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não fornece dados de localização subnacionais sobre o público-alvo de um anúncio.
 - code: AD_OC31
   selected_answer: 'no'
   notes: Both the LinkedIn Ad Library API and GUI display some of the targeting criteria applied to ads. However, even when targeting is used and the API responses indicate its application, these criteria are not described in sufficient detail. As a result, the platform does not meet the requirements for this item.
-  notes_pt: Both the LinkedIn Ad Library API and GUI display some of the targeting criteria applied to ads. However, even when targeting is used and the API responses indicate its application, these criteria are not described in sufficient detail. As a result, the platform does not meet the requirements for this item.
+  notes_pt: Tanto a API quanto a GUI da LinkedIn Ad Library exibem alguns dos critérios de segmentação aplicados aos anúncios. No entanto, mesmo quando a segmentação é utilizada e as respostas da API indicam a sua aplicação, estes critérios não são descritos com detalhes suficientes. Com isso, a plataforma não atende aos requisitos deste item.
 - code: AD_OC32
   selected_answer: 'no'
   notes: The LinkedIn Ad Library provides data on [ad impressions](https://www.linkedin.com/help/lms/answer/a1620070), but not at a sufficiently granular level.
-  notes_pt: The LinkedIn Ad Library provides data on [ad impressions](https://www.linkedin.com/help/lms/answer/a1620070), but not at a sufficiently granular level.
+  notes_pt: A LinkedIn Ad Library fornece dados sobre [ad impressions](https://www.linkedin.com/help/lms/answer/a1620070), mas não em um nível suficientemente granular.
 - code: AD_OC33
   selected_answer: 'no'
   notes: The LinkedIn Ad Library does not provide any data on ad spending.
-  notes_pt: The LinkedIn Ad Library does not provide any data on ad spending.
+  notes_pt: A Biblioteca de anúncios do LinkedIn não fornece dados sobre gastos com publicidade.

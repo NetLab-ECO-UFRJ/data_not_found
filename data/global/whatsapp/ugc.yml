@@ -7,19 +7,19 @@ special-criteria_answers:
 - code: UGC_SC1
   selected_answer: 'no'
   notes: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
-  notes_pt: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
+  notes_pt: O WhatsApp e a Meta Content Library não fornecem uma API que permita o acesso programático ou a extração de dados públicos de conteúdo gerado pelo usuário.
 - code: UGC_SC2
   selected_answer: 'no'
   notes: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
-  notes_pt: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
+  notes_pt: O WhatsApp e a Meta Content Library não fornecem uma API que permita o acesso programático ou a extração de dados públicos de conteúdo gerado pelo usuário.
 - code: UGC_SC3
   selected_answer: 'no'
   notes: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
-  notes_pt: WhatsApp and the Meta Content Library do not provide an API that enables programmatic access to or extraction of public user-generated content data.
+  notes_pt: O WhatsApp e a Meta Content Library não fornecem uma API que permita o acesso programático ou a extração de dados públicos de conteúdo gerado pelo usuário.
 - code: UGC_SC4
   selected_answer: 'no'
   notes: WhatsApp and the Meta Content Library do not provide a graphical interface that enables programmatic access to or extraction of public user-generated content data.
-  notes_pt: WhatsApp and the Meta Content Library do not provide a graphical interface that enables programmatic access to or extraction of public user-generated content data.
+  notes_pt: O WhatsApp e a Meta Content Library não fornecem uma interface gráfica que permita o acesso programático ou a extração de dados públicos de conteúdo gerado pelo usuário.
 accessibility_answers:
 - code: UGC_OC1
   selected_answer: 'no'
