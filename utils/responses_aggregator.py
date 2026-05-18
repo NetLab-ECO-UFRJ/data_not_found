@@ -92,7 +92,7 @@ def load_questions_ordered(year: str = "2025", question_type: str = "ugc") -> Or
     questions = OrderedDict()
     for category_name, questions_list in data.items():
         if isinstance(questions_list, list):
-            category_label = category_name.replace('-', ' ').replace('_', ' ').title()
+            category_label = t(category_name)
             questions[category_name] = {
                 "label": category_label,
                 "questions": []
@@ -100,8 +100,8 @@ def load_questions_ordered(year: str = "2025", question_type: str = "ugc") -> Or
             for q in questions_list:
                 questions[category_name]["questions"].append({
                     "code": q["code"],
-                    "title": q.get("title", ""),
-                    "answers": {a["value"]: a["label"] for a in q.get("answers", [])}
+                    "title": get_localized_field(q, "title"),
+                    "answers": {a["value"]: t(a["label"]) for a in q.get("answers", [])}
                 })
 
     return questions

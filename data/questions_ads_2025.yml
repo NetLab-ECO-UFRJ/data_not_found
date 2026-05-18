@@ -1,6 +1,7 @@
 special_criteria:
   - code: AD_SC1
     title: Does the platform provide an API to access its ad repository and extract data on advertising content for independent analysis?
+    title_pt: A plataforma fornece uma API para acessar seu repositório de anúncios e extrair dados sobre conteúdo publicitário para análise independente?
     description: >
       This item verifies whether the platform provides an ad repository API with at least one endpoint for
       programmatically extracting advertising data. Full availability is confirmed when the API returns information
@@ -20,6 +21,7 @@ special_criteria:
 
   - code: AD_SC2
     title: Does the platform provide a graphical user interface to its ad repository for extracting advertising content data?
+    title_pt: A plataforma fornece uma interface gráfica para seu repositório de anúncios para extração de dados sobre conteúdo publicitário?
     description: >
       This item verifies whether the platform provides a graphical user interface (GUI) that enables the extraction of structured data without programming. Full availability is considered granted when the GUI delivers information on ads across all categories. The assessment should confirm the availability of an official browser-based tool that allows users not only to view ad content but also to export its data.
     weight: 0.30
@@ -36,6 +38,7 @@ special_criteria:
 
   - code: AD_SC3
     title: Can data from both active and inactive ads be extracted?
+    title_pt: É possível extrair dados tanto de anúncios ativos quanto inativos?
     description: >
       This item verifies whether the platform allows the extraction of ad data through either the GUI or the API,
       from at least one day after publication to at least one year prior. Full availability is confirmed when both
@@ -56,6 +59,7 @@ special_criteria:
 accessibility:
   - code: AD_OC1
     title: Does the platform provide a GUI for accessing and visualizing its ad repository?
+    title_pt: A plataforma fornece uma interface gráfica para acessar e visualizar seu repositório de anúncios?
     description: >
       This item verifies whether the platform provides a GUI for accessing and viewing ads in its ad repository. Full
       access is confirmed when the GUI provides information on ads across all categories and publication statuses,
@@ -75,6 +79,7 @@ accessibility:
 
   - code: AD_OC2
     title: Is access to the platform's ad repository free of charge?
+    title_pt: O acesso ao repositório de anúncios da plataforma é gratuito?
     description: >
       This item verifies whether the ad repository API or GUI is free of charge, since even modest fees can create
       barriers or force researchers in low-resourced settings to narrow the scope of their work. The assessment should
@@ -97,6 +102,7 @@ accessibility:
 
   - code: AD_OC3
     title: Can the requested data be extracted directly from the ad repository response?
+    title_pt: Os dados solicitados podem ser extraídos diretamente da resposta do repositório de anúncios?
     description: >
       This item verifies whether the platform's ad repository returns structured data on ad content and authorship
       directly in the response, rather than providing a link that redirects to the data. Audiovisual media files and
@@ -120,6 +126,7 @@ accessibility:
 
   - code: AD_OC4
     title: Does the platform's ad repository API provide a form of authentication that allows for renewal without the risk of data loss?
+    title_pt: A API do repositório de anúncios da plataforma fornece uma forma de autenticação que permite renovação sem risco de perda de dados?
     description: >
       This item verifies whether the tokens provided for API use can be renewed without the risk of data loss,
       ensuring continuity and integrity of data access and monitoring. The assessment should check the platform's
@@ -136,6 +143,7 @@ accessibility:
 
   - code: AD_OC5
     title: Can data from an individual ad be retrieved from the platform?
+    title_pt: É possível recuperar da plataforma dados de um anúncio individual?
     description: >
       This item verifies whether it is possible to retrieve data from a specific advertisement on the ad repository
       using a unique identifier, rather than relying on search terms or other parameters and filters. The assessment
@@ -158,6 +166,7 @@ accessibility:
 
   - code: AD_OC6
     title: Can data from ads served by a specific advertiser be retrieved from the platform?
+    title_pt: É possível recuperar da plataforma dados de anúncios veiculados por um anunciante específico?
     description: >
       This item verifies whether it is possible to retrieve data from ads run by a specific advertiser, via their
       username or unique identifier. The assessment should review the ad repository documentation and test any
@@ -179,6 +188,7 @@ accessibility:
 
   - code: AD_OC7
     title: Can ad data be retrieved from the platform using search terms?
+    title_pt: É possível recuperar dados de anúncios da plataforma usando termos de busca?
     description: >
       This item verifies whether ad data can be retrieved through search terms, enabling the creation of datasets based
       on those queries. The assessment should test search-related features to confirm that it accepts search queries
@@ -200,6 +210,7 @@ accessibility:
 
   - code: AD_OC8
     title: Does the platform use locale-neutral data representations?
+    title_pt: A plataforma usa representações de dados neutras em relação à localidade?
     description: >
       This item verifies whether locale-sensitive data (e.g., timestamps, currency, numbers) are provided in a
       locale-neutral format, or, if that is not possible, whether relevant locale metadata is included. The assessment
@@ -223,6 +234,7 @@ accessibility:
 completeness:
   - code: AD_OC9
     title: Does the platform provide data that allows the identification of advertisers who ran ads?
+    title_pt: A plataforma fornece dados que permitem identificar os anunciantes que veicularam anúncios?
     description: >
       This item verifies whether the platform discloses information on the advertisers responsible for the identified
       ads. The assessment should confirm whether the advertiser's page name, URL, and unique identifier can be
@@ -244,6 +256,7 @@ completeness:
 
   - code: AD_OC10
     title: Does the platform provide data on the funders who paid for ads?
+    title_pt: A plataforma fornece dados sobre os financiadores que pagaram pelos anúncios?
     description: >
       This item verifies whether the platform provides data on the individuals or organizations that paid for the
       identified ads. The assessment should confirm whether any sponsor information is retrievable.
@@ -264,6 +277,7 @@ completeness:
 
   - code: AD_OC11
     title: Does the platform provide data on the period during which ads were served?
+    title_pt: A plataforma fornece dados sobre o período em que os anúncios foram veiculados?
     description: >
       This item verifies whether the platform provides data on the days on which the identified ads ran. The
       assessment should review the extracted ad data to confirm that it includes start and end dates (or equivalent
@@ -285,6 +299,7 @@ completeness:
 
   - code: AD_OC12
     title: Does the platform provide data on user engagement with ads?
+    title_pt: A plataforma fornece dados sobre o engajamento dos usuários com os anúncios?
     description: >
       This item verifies whether the platform provides data on the total number of user interactions with ads
       (e.g., likes, comments, shares, clicks). The assessment should review the extracted ad data to confirm that
@@ -306,6 +321,7 @@ completeness:
 
   - code: AD_OC13
     title: Does the platform indicate whether ads were placed by verified or unverified advertisers?
+    title_pt: A plataforma indica se os anúncios foram veiculados por anunciantes verificados ou não verificados?
     description: >
       This item verifies whether the platform clearly indicates whether advertisers were verified at the time their
       ads were served. The assessment should review ad records to confirm that a verification status field is present.
@@ -327,6 +343,7 @@ completeness:
 compliance:
   - code: AD_OC14
     title: Does the platform flag ads that were removed due to violations of its guidelines or relevant legislation?
+    title_pt: A plataforma sinaliza anúncios que foram removidos por violações de suas diretrizes ou da legislação aplicável?
     description: >
       This item verifies whether the platform indicates when an ad has been moderated. At a minimum, the platform
       should provide the reason for removal and the date. The assessment should review ad records to confirm that
@@ -348,6 +365,7 @@ compliance:
 
   - code: AD_OC15
     title: Does the platform indicate whether ad content was generated using artificial intelligence?
+    title_pt: A plataforma indica se o conteúdo do anúncio foi gerado com uso de inteligência artificial?
     description: >
       This item verifies whether the platform flags ads in which AI was involved in generating the content. The
       assessment should review ad records to confirm the presence of a field or label indicating the use of AI in ad
@@ -369,6 +387,7 @@ compliance:
 
   - code: AD_OC16
     title: Is the platform's ad repository documentation published in open access?
+    title_pt: A documentação do repositório de anúncios da plataforma é publicada em acesso aberto?
     description: >
       This item verifies whether the platform makes its ad repository documentation openly available on the internet,
       without requiring user registration or login. The assessment should attempt to access the documentation
@@ -390,6 +409,7 @@ compliance:
 
   - code: AD_OC17
     title: Is the platform's ad repository documentation clearly written and exemplified?
+    title_pt: A documentação do repositório de anúncios da plataforma é redigida de forma clara e com exemplos?
     description: >
       This item verifies whether the documentation for the platform's ad repository is clear, complete, and provides
       practical implementation examples. The assessment should review the documentation to confirm the presence of
@@ -411,6 +431,7 @@ compliance:
 
   - code: AD_OC18
     title: Does the platform's ad repository documentation include or link to its terms of use?
+    title_pt: A documentação do repositório de anúncios da plataforma inclui ou remete aos seus termos de uso?
     description: >
       This item verifies whether the documentation clearly and unambiguously states or refers to the terms for using
       the ad repository and its associated legal aspects. The assessment should review the documentation to confirm
@@ -432,6 +453,7 @@ compliance:
 
   - code: AD_OC19
     title: Does the platform provide its ad repository documentation in the official languages of the assessed region?
+    title_pt: A plataforma fornece a documentação de seu repositório de anúncios nos idiomas oficiais da região avaliada?
     description: >
       This item verifies whether the platform provides its ad repository documentation in the official languages of
       the region being assessed. The assessment should review the documentation to confirm that complete and up-to-date
@@ -453,6 +475,7 @@ compliance:
 
   - code: AD_OC20
     title: Does the platform implement a proper deprecation strategy to avoid breaking client applications while rolling out major changes in the API?
+    title_pt: A plataforma implementa uma estratégia adequada de descontinuação para evitar quebrar aplicações cliente ao introduzir mudanças importantes na API?
     description: >
       This item verifies whether the platform's documentation describes a deprecation strategy with a grace period
       before removing features. The assessment should review changelogs to confirm that deprecated features are listed
@@ -469,6 +492,7 @@ compliance:
 
   - code: AD_OC21
     title: Does the platform's ad repository API documentation detail the response format of each endpoint?
+    title_pt: A documentação da API do repositório de anúncios da plataforma detalha o formato de resposta de cada endpoint?
     description: >
       This item verifies whether the platform's ad repository API documentation specifies the format of each possible
       response, including examples and potential errors. The assessment should review the documentation to confirm that
@@ -484,6 +508,7 @@ compliance:
 
   - code: AD_OC22
     title: Does the platform's ad repository API documentation detail the quota or rate limits applicable to each available endpoint?
+    title_pt: A documentação da API do repositório de anúncios da plataforma detalha as cotas ou os limites de taxa aplicáveis a cada endpoint disponível?
     description: >
       This item verifies whether the platform's ad repository API documentation specifies the limits for each endpoint,
       including any variations based on authentication level or endpoint type. Rate and quota limits define the maximum
@@ -502,6 +527,7 @@ compliance:
 consistency:
   - code: AD_OC23
     title: Does the data retrieved by the API reflect what is displayed on the platform's ad repository GUI?
+    title_pt: Os dados recuperados pela API refletem o que é exibido na interface gráfica do repositório de anúncios da plataforma?
     description: >
       This item verifies whether the data returned by the platform's ad repository API corresponds to the information
       displayed on its GUI in all its levels of detail. It should be possible to identify in the API response information
@@ -519,6 +545,7 @@ consistency:
 
   - code: AD_OC24
     title: Are the results returned by the platform consistently reproducible?
+    title_pt: Os resultados retornados pela plataforma são reproduzíveis de forma consistente?
     description: >
       This item verifies whether data accessed and extracted via the platform’s ad repository at a given time is consistent with other collections performed similarly. The assessment should perform repeated queries to confirm the reproducibility of results or ground the response based on recent (less than 2 years) experiments published in peer-reviewed journals.
     weight: 1.0
@@ -538,6 +565,7 @@ consistency:
 
   - code: AD_OC25
     title: Is the data returned by the platform consistent with the parameters and filters used in the request?
+    title_pt: Os dados retornados pela plataforma são consistentes com os parâmetros e filtros usados na solicitação?
     description: >
       This item verifies whether the data retrieved through the ad repository accurately reflects the parameters and
       filters specified at the time of the request. The assessment should run test queries with different filters to
@@ -560,6 +588,7 @@ consistency:
 relevance:
   - code: AD_OC26
     title: Does the platform allow the use of temporal filters to retrieve data on ads?
+    title_pt: A plataforma permite o uso de filtros temporais para recuperar dados sobre anúncios?
     description: >
       This item verifies whether the ad repository allows filtering data by the time period in which the ads were
       served. The assessment should test queries with temporal filters to confirm that results accurately reflect the
@@ -581,6 +610,7 @@ relevance:
 
   - code: AD_OC27
     title: Does the platform allow filtering advertising data by ad category?
+    title_pt: A plataforma permite filtrar dados publicitários por categoria de anúncio?
     description: >
       This item verifies whether the ad repository allows filtering data by any categories assigned at the time of ad
       creation. The assessment should run test queries with category filters to confirm that results align with the
@@ -602,6 +632,7 @@ relevance:
 
   - code: AD_OC28
     title: Does the platform allow filtering advertising data by geographic location?
+    title_pt: A plataforma permite filtrar dados publicitários por localização geográfica?
     description: >
       This item verifies whether the ad repository allows filtering data by one or more geographic locations where the
       ads were served. The assessment should test queries with location filters to confirm that results match the
@@ -624,6 +655,7 @@ relevance:
 accuracy:
   - code: AD_OC29
     title: Does the platform provide age and gender data on the audiences of ads?
+    title_pt: A plataforma fornece dados de idade e gênero sobre os públicos alcançados pelos anúncios?
     description: >
       This item verifies whether the platform provides data on the age and gender of audiences reached. The assessment
       should review the ad records to confirm that these breakdowns are available and consistently reported.
@@ -644,6 +676,7 @@ accuracy:
 
   - code: AD_OC30
     title: Does the platform provide subnational geographic data on the audience reached by ads?
+    title_pt: A plataforma fornece dados geográficos subnacionais sobre o público alcançado pelos anúncios?
     description: >
       This item verifies whether the platform provides data on the subnational geographic location of audiences
       reached. The assessment should review the ad records to confirm that such location breakdowns are available and
@@ -665,6 +698,7 @@ accuracy:
 
   - code: AD_OC31
     title: Does the platform include data on audience targeting criteria defined by advertisers?
+    title_pt: A plataforma inclui dados sobre critérios de segmentação de público definidos pelos anunciantes?
     description: >
       This item verifies whether the platform provides data on audience targeting criteria defined by the advertiser
       when publishing ads (e.g., demographic and geographic segments, as well as interests, attitudes, behaviors, and
@@ -687,6 +721,7 @@ accuracy:
 
   - code: AD_OC32
     title: Does the platform provide granular volume ranges for ad impressions?
+    title_pt: A plataforma fornece faixas granulares de volume para impressões de anúncios?
     description: >
       This item verifies whether the ad repository provides impression values for ads, using ranges that closely
       approximate the actual numbers. Intervals should be no larger than 10% of the upper bound of the value range
@@ -712,6 +747,7 @@ accuracy:
 
   - code: AD_OC33
     title: Does the platform provide granular investment ranges for ad spending?
+    title_pt: A plataforma fornece faixas granulares de investimento para gastos com anúncios?
     description: >
       This item verifies whether the ad repository provides spending values for ads, using ranges that closely
       approximate the actual amounts. Intervals should be no larger than 10% of the upper bound of the value range

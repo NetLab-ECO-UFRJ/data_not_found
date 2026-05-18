@@ -2,6 +2,8 @@ special_criteria:
 - code: UGC_SC1
   title: Does the platform provide an API that enables the structured extraction of
     public user-generated content data for independent analysis?
+  title_pt: A plataforma oferece uma API que permite a extração estruturada de dados
+    públicos de conteúdo gerado por usuários para análise independente?
   description: Verifies whether the platform provides an API with at least one endpoint
     for programmatically extracting public user-generated content to the users’ infrastructure,
     without requiring privileged or internal access beyond standard developer registration.
@@ -19,6 +21,8 @@ special_criteria:
 - code: UGC_SC2
   title: Can the full scope of public content data be extracted through the platform’s
     API?
+  title_pt: Todo o conjunto de dados de conteúdo público pode ser extraído por meio
+    da API da plataforma?
   description: Verifies whether the platform enables programmatic discovery and extraction
     of data from the complete set of public user-generated content, without exclusions
     or artificial restrictions that limit data completeness.
@@ -35,6 +39,7 @@ special_criteria:
     weight: 1.0
 - code: UGC_SC3
   title: Is access to the platform’s API free of charge?
+  title_pt: O acesso à API da plataforma é gratuito?
   description: Verifies whether API use is free of charge, confirming via documentation
     and pricing policies that no fees are applied for API access.
   weight: 0.3
@@ -50,6 +55,7 @@ special_criteria:
     weight: 1.0
 - code: UGC_SC4
   title: Does the platform offer a graphical interface for extracting data?
+  title_pt: A plataforma oferece uma interface gráfica para extração de dados?
   description: Verifies whether the platform offers a graphical interface for observing
     and collecting data to the users’ infrastructure, such as a dashboard or export
     feature, allowing extraction of public content data without programming.
@@ -67,6 +73,8 @@ special_criteria:
 accessibility:
 - code: UGC_OC1
   title: Can the requested data be extracted directly from the platform’s API response?
+  title_pt: Os dados solicitados podem ser extraídos diretamente da resposta da API
+    da plataforma?
   description: Verifies whether the API returns structured data directly in its response
     payload, rather than only providing redirect links to the data (excluding audiovisual
     media such as images, video, and audio).
@@ -80,6 +88,8 @@ accessibility:
     weight: 1.0
 - code: UGC_OC2
   title: Does the platform's API support renewable authentication mechanisms without risk of data loss?
+  title_pt: A API da plataforma oferece suporte a mecanismos de autenticação renováveis
+    sem risco de perda de dados?
   description: Verifies whether the API's authentication mechanism (e.g., tokens, keys, or other access methods) can be renewed or updated without interrupting data collection, losing access, or compromising the continuity and integrity of monitoring and extraction.
   weight: 1.0
   answers:
@@ -92,6 +102,8 @@ accessibility:
 - code: UGC_OC3
   title: Does the platform’s API offer an endpoint for extracting data from an individual
     publication?
+  title_pt: A API da plataforma oferece um endpoint para extrair dados de uma publicação
+    individual?
   description: Verifies whether data from a specific public post can be collected
     using its unique identifier, without relying only on search terms or filters.
   weight: 1.0
@@ -108,6 +120,8 @@ accessibility:
 - code: UGC_OC4
   title: Does the platform’s API offer an endpoint for extracting data from an individual
     author?
+  title_pt: A API da plataforma oferece um endpoint para extrair dados de um autor
+    individual?
   description: Verifies whether it is possible to collect data from public posts made
     by a specific author using their username or unique identifier.
   weight: 1.0
@@ -121,6 +135,8 @@ accessibility:
 - code: UGC_OC5
   title: Does the platform’s API provide an endpoint for extracting data based on
     search terms?
+  title_pt: A API da plataforma fornece um endpoint para extrair dados com base em
+    termos de busca?
   description: Verifies whether public user-generated content can be collected by
     querying individual or combined search terms, enabling datasets of posts mentioning
     those terms.
@@ -134,6 +150,7 @@ accessibility:
     weight: 1.0
 - code: UGC_OC6
   title: Does the API use locale-neutral data representations?
+  title_pt: A API usa representações de dados neutras em relação à localidade?
   # https://www.w3.org/TR/ltli/
   description: Verifies whether locale-sensitive data (such as timestamps, currency,
     and numbers) are returned in a locale-neutral format or accompanied by relevant
@@ -150,6 +167,8 @@ compliance:
 - code: UGC_OC7
   title: Does the platform implement a proper deprecation strategy to avoid breaking
     client applications while rolling out major changes in the API?
+  title_pt: A plataforma implementa uma estratégia adequada de descontinuação para
+    evitar quebrar aplicações clientes ao introduzir mudanças importantes na API?
   description: Verifies whether the platform documents a deprecation strategy with
     a grace period before removing features, including deprecation and removal dates
     and migration instructions.
@@ -163,6 +182,7 @@ compliance:
     weight: 1.0
 - code: UGC_OC8
   title: Is the platform’s API documentation published in open access?
+  title_pt: A documentação da API da plataforma é publicada em acesso aberto?
   description: Verifies whether full API documentation is openly available on the
     internet without requiring registration, login, or account creation.
   weight: 1.0
@@ -175,6 +195,7 @@ compliance:
     weight: 1.0
 - code: UGC_OC9
   title: Is the platform’s API documentation clearly written and exemplified?
+  title_pt: A documentação da API da plataforma é redigida de forma clara e com exemplos?
   description: Verifies whether API documentation is clear, complete, and includes
     practical examples such as sample code, queries, and structured references.
   weight: 1.0
@@ -187,6 +208,8 @@ compliance:
     weight: 1.0
 - code: UGC_OC10
   title: Does the platform’s documentation include or link to the API or data access terms of use?
+  title_pt: A documentação da plataforma inclui ou remete aos termos de uso da API
+    ou de acesso aos dados?
   description: Verifies whether the platform’s documentation clearly states, or provides a direct link to, the API's terms of use. The assessment should review the documentation to confirm the presence of explicit legal terms that define permitted data access, usage conditions, and any applicable restrictions.
   weight: 1.0
   answers:
@@ -199,6 +222,8 @@ compliance:
 - code: UGC_OC11
   title: Does the platform’s API documentation detail the response format of each
     endpoint?
+  title_pt: A documentação da API da plataforma detalha o formato de resposta de
+    cada endpoint?
   description: Verifies whether the API documentation specifies response formats for
     endpoints, including examples and potential error codes, with explicit descriptions
     of response structures.
@@ -213,6 +238,8 @@ compliance:
 - code: UGC_OC12
   title: Does the platform provide its API documentation in the official languages
     of the assessed region?
+  title_pt: A plataforma disponibiliza sua documentação de API nos idiomas oficiais
+    da região avaliada?
   description: Verifies whether complete and up-to-date API documentation is available
     in the official languages of the region being assessed.
   weight: 1.0
@@ -226,6 +253,8 @@ compliance:
 - code: UGC_OC13
   title: Does the platform’s API documentation detail the quota or rate limits applicable
     to each available endpoint?
+  title_pt: A documentação da API da plataforma detalha as cotas ou limites de taxa
+    aplicáveis a cada endpoint disponível?
   description: Verifies whether the documentation specifies rate limits and quotas
     for each endpoint, including variations by authentication level or endpoint type.
   weight: 1.0
@@ -239,6 +268,8 @@ compliance:
 - code: UGC_OC14
   title: Does the platform provide a way to label content that has been generated
     with artificial intelligence?
+  title_pt: A plataforma oferece uma forma de rotular conteúdo que foi gerado com
+    inteligência artificial?
   description: Verifies whether the platform automatically flags or allows users to
     flag AI-generated content and whether this information is exposed in the API response.
   weight: 1.0
@@ -253,6 +284,8 @@ completeness:
 - code: UGC_OC15
   title: Can data from a publication’s comments be extracted using the platform’s
     API?
+  title_pt: Os dados dos comentários de uma publicação podem ser extraídos usando
+    a API da plataforma?
   description: Verifies whether comment data, including content, can be extracted
     when available—either together with publication data or via dedicated endpoints.
   weight: 1.0
@@ -265,6 +298,7 @@ completeness:
     weight: 1.0
 - code: UGC_OC16
   title: Can data from temporary content be extracted through the platform’s API?
+  title_pt: Dados de conteúdo temporário podem ser extraídos por meio da API da plataforma?
   description: Verifies whether the API provides at least one endpoint for collecting
     data from temporary publications (e.g., stories or other ephemeral content) as
     structured data before expiration.
@@ -278,6 +312,7 @@ completeness:
     weight: 1.0
 - code: UGC_OC17
   title: Can historical data be extracted through the platform’s API?
+  title_pt: Dados históricos podem ser extraídos por meio da API da plataforma?
   description: Verifies whether endpoints allow the collection of public user-generated
     content data from a time range that extends more than one year prior to the request
     date.
@@ -292,6 +327,8 @@ completeness:
 - code: UGC_OC18
   title: Is the number of requests allowed by the API sufficient for monitoring more
     than 10,000 publications in 24 hours?
+  title_pt: O número de requisições permitido pela API é suficiente para monitorar
+    mais de 10.000 publicações em 24 horas?
   description: Verifies whether the platform’s rate limits and quotas allow continuous
     extraction of data for more than 10,000 publications within a 24-hour period without
     losses.
@@ -306,6 +343,7 @@ completeness:
 consistency:
 - code: UGC_OC19
   title: Are the results returned by the API consistently reproducible?
+  title_pt: Os resultados retornados pela API são reproduzíveis de forma consistente?
   description: Verifies whether data extracted via the platform’s API at any given time is consistent with other collections performed similarly. The assessment should conduct repeated test queries to confirm the reproducibility of results or ground the response based on recent (less than 2 years) experiments published in peer-reviewed journals.
   weight: 1.0
   answers:
@@ -318,6 +356,8 @@ consistency:
 - code: UGC_OC20
   title: Is the data returned by the platform’s API consistent with the parameters
     and filters used in the request?
+  title_pt: Os dados retornados pela API da plataforma são consistentes com os parâmetros
+    e filtros usados na requisição?
   description: Verifies whether the data returned by the API matches the filters and
     parameters specified, based on repeated test queries or recent validation studies.
   weight: 1.0
@@ -332,6 +372,8 @@ relevance:
 - code: UGC_OC21
   title: Does the data extracted by the platform’s API reflect what is displayed on
     its user interface?
+  title_pt: Os dados extraídos pela API da plataforma refletem o que é exibido em
+    sua interface de usuário?
   description: Verifies whether the API data corresponds to the information displayed
     on the user interface at all levels of detail, including authorship, full content,
     interaction counts, and referenced content.
@@ -345,6 +387,8 @@ relevance:
     weight: 1.0
 - code: UGC_OC22
   title: Does the platform's API allow for filtering data based on content or its author location?
+  title_pt: A API da plataforma permite filtrar dados com base na localização do
+    conteúdo ou de seu autor?
   description: Verifies whether the API supports applying location-based filters to data extraction. The assessment should test the endpoint for the main content type to confirm that data on public posts can be filtered by content or author location.
   weight: 1.0
   answers:
@@ -356,6 +400,7 @@ relevance:
     weight: 1.0
 - code: UGC_OC23
   title: Does the platform’s API allow for filtering data based on content language?
+  title_pt: A API da plataforma permite filtrar dados com base no idioma do conteúdo?
   description: Verifies whether the API allows applying language-based filters, enabling
     public post data to be filtered by content language.
   weight: 1.0
@@ -368,6 +413,7 @@ relevance:
     weight: 1.0
 - code: UGC_OC24
   title: Does the platform’s API allow for filtering data by specific time periods?
+  title_pt: A API da plataforma permite filtrar dados por períodos de tempo específicos?
   description: Verifies whether the API allows applying custom temporal filters so
     that public post data can be filtered by specific time ranges.
   weight: 1.0
@@ -382,6 +428,8 @@ timeliness:
 - code: UGC_OC25
   title: Can data from newly published content be extracted from the platform’s API
     in near real time?
+  title_pt: Dados de conteúdo recém-publicado podem ser extraídos da API da plataforma
+    em tempo quase real?
   description: Verifies whether the API allows the collection of data from specific
     content within approximately one hour of its publication, enabling near real-time
     monitoring.
