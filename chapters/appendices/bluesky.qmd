@@ -70,7 +70,7 @@ generate_platform_question_sections(
 ## Advertising
 :::
 ::: {.content-visible when-profile="pt"}
-## Publicidade
+## Anúncios
 :::
 
 ```{python}

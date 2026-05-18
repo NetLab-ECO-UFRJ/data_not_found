@@ -87,7 +87,7 @@ display(HTML(generate_summary_heatmap('ugc', include_average_row=True, show_valu
 
 **Mesmo nas plataformas que oferecem algum nível de transparência, ainda existem gargalos importantes que limitam a pesquisa em redes sociais.** Funcionalidades básicas — como filtros por localização geográfica ou idioma — muitas vezes não estão disponíveis nas APIs, enquanto o acesso a conteúdos históricos é praticamente inexistente ou muito limitado. Na prática, isso obriga pesquisadores que querem fazer análises mais localizadas a coletar volumes de dados muito maiores do que o necessário e depois depender de processos pesados de tratamento e filtragem. Esse tipo de abordagem pode introduzir novas fontes de erro e viés, além de exigir uma infraestrutura robusta — o que acaba prejudicando especialmente pesquisadores com menos recursos, justamente aqueles que muitas vezes estão mais próximos dos problemas de integridade da informação em regiões e idiomas menos atendidos. Ao mesmo tempo, a dificuldade de acessar dados históricos impede análises longitudinais, limitando a capacidade de entender como fenômenos como campanhas de desinformação ou discurso de ódio evoluem. No fim, essas limitações não são apenas inconvenientes pontuais, mas barreiras estruturais que definem, na prática, o tipo de conhecimento que conseguimos produzir sobre o ambiente informacional digital.
 
-## Dados de Publicidade {#advertising-data}
+## Dados de Anúncios {#advertising-data}
 
 ```{python}
 

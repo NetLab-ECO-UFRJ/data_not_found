@@ -66,7 +66,7 @@ display(HTML(generate_summary_heatmap('ugc', include_average_row=True, show_valu
 
 ```
 
-### Publicidade
+### Anúncios
 
 ```{python}
 
@@ -75,7 +75,7 @@ display(HTML(generate_summary_heatmap('ads', include_average_row=True, show_valu
 ```
 
 ::: {.callout-note}
-O Bluesky foi excluído da avaliação de Publicidade, pois a plataforma não oferece anúncios.
+O Bluesky foi excluído da avaliação de Anúncios, pois a plataforma não oferece anúncios.
 :::
 
 ## Principais resultados {#key-findings}

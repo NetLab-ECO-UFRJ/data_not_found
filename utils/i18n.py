@@ -109,7 +109,7 @@ LABELS: Dict[str, Dict[str, str]] = {
         "uk": "Reino Unido",
         "average": "Média",
         "ugc_framework": "Conteúdo gerado por usuários",
-        "ads_framework": "Publicidade",
+        "ads_framework": "Anúncios",
         "score_band_not_available": "Indisponível",
         "score_band_negligible": "Insignificante",
         "score_band_minimal": "Mínima",
