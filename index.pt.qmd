@@ -21,13 +21,13 @@ Santini, R. M., Leal, H., Salles, D., Belisário, A., Mattos, B., & Pinho, D. (2
 
 ```bibtex
 @techreport{santini2026datanotfound,
-  title       = {Data Not Found: Social Media Data Transparency
-                 for Information Integrity},
+  title       = {Data Not Found: Transparência de redes sociais para a integridade da informação},
   author      = {Santini, Rose Marie and Leal, Hugo and
                  Salles, Debora and Belisario, Adriano and
                  Mattos, Bruno and Pinho, Danielle},
   year        = {2026},
   institution = {NetLab UFRJ \& Minderoo Centre for Technology
                  and Democracy},
+  doi         = {10.5281/zenodo.20084860},
 }
 ```
