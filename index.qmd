@@ -29,5 +29,7 @@ Santini, R. M., Leal, H., Salles, D., Belisario, A., Mattos, B., & Pinho, D. (20
   year        = {2026},
   institution = {NetLab UFRJ \& Minderoo Centre for Technology
                  and Democracy},
+  doi         = {10.17863/CAM.128975},
+  url         = {https://doi.org/10.17863/CAM.128975}
 }
 ```
