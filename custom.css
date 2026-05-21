@@ -274,6 +274,14 @@ a:hover {
   display: none;
 }
 
+:lang(pt) .quarto-other-links h2::before {
+  content: "Outros Recursos";
+}
+
+:lang(pt) .quarto-code-links h2::before {
+  content: "Idioma";
+}
+
 /* Part labels */
 .sidebar-section > .sidebar-item > .sidebar-item-text {
   font-size: var(--text-xs);
